@@ -1,4 +1,5 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js](https://nextjs.org/) project bootstrapped with
+[`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
@@ -36,3 +37,22 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Roadmap
+
+List of things to be implemented:
+
+- [ ] Define colorscheme to be used throughout the website
+- [ ] Choose font (or fonts) to be used
+- [ ] Setup `/sketches` page
+- [ ] Setup `/sketches/[id]` page so that each identifier maps to a specific .js page containing the sketch to be displayed
+- [ ] Setup `/posts` page
+- [ ] Setup `/posts/[id]` page so that each identifier maps to a Markdown file containing the post's content
+	- Double check we're able to render images this way
+- [ ] Try to use React in order to creat inputs to control variables in some of the sketches, in favour of using Tweakpane
+- [ ] Use shapes for each of the website's section, for example, square for the "Posts", circle for the "Sketches", etc.
+	- [Some inspiration](https://www.creativeboom.com/uploads/articles/0f/0f4e193ba9164073646e67421eb37b4b26986c67_1620.png).
+
+### Inspiration
+
+![Wolff Olins Menu](inspiration/wolffolins_com.png)
