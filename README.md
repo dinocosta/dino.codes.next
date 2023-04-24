@@ -42,8 +42,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 List of things to be implemented:
 
+- [X] Choose font (or fonts) to be used - [Plus Jakarta Sans](https://fonts.google.com/specimen/Plus+Jakarta+Sans?query=Jakarta)
 - [ ] Define colorscheme to be used throughout the website
-- [ ] Choose font (or fonts) to be used
 - [ ] Setup `/sketches` page
 - [ ] Setup `/sketches/[id]` page so that each identifier maps to a specific .js page containing the sketch to be displayed
 - [ ] Setup `/posts` page
