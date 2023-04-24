@@ -6,3 +6,4 @@
 	[Google Fonts](https://fonts.google.com/).
 * Did an initial attemp at the homepage, with links at the bottom-left of the page, but it's proving harder than initial
 	though to find the perfect combination of Tailwind classes to achieve this.
+* Selected a colorscheme to use and updated the homepage to use these new colors.
