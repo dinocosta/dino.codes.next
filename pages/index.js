@@ -6,14 +6,12 @@ const jakarta = Plus_Jakarta_Sans({ subsets: ['latin'] });
 
 export default function Home() {
   return (
-		<div className="absolute inset-0">
-			<div className={`flex min-h-screen items-end ${jakarta.className}`}>
-				<div className="mb-auto"></div>
-				<div className="m-20">
-					<Link href="/" className="link">Posts</Link>
-					<Link href="/sketches" className="link">Sketches</Link>
-					<Link href="/" className="link">About</Link>
-				</div>
+		<div className={`flex min-h-screen p-5 md:p-10 lg:p-20 items-end ${jakarta.className}`}>
+			<div className="mb-auto"></div>
+			<div>
+				<Link href="/" className="link">Posts</Link>
+				<Link href="/sketches" className="link">Sketches</Link>
+				<Link href="/" className="link">About</Link>
 			</div>
 		</div>
   );
