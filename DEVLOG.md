@@ -1,3 +1,9 @@
+## 2023-04-25
+
+* Learned how to add custom styles to TailwindCSS, using [this
+	guide](https://tailwindcss.com/docs/adding-custom-styles), and moved the colorscheme to TailwindCSS as well as
+	creating a custom class `.link` to avoid repeating the same classes in the `<Link>` element's classes.
+
 ## 2023-04-24
 
 * Picked [Plus Jakarta Sans](https://fonts.google.com/specimen/Plus+Jakarta+Sans?query=Jakarta) as the font for the
