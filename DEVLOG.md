@@ -1,3 +1,8 @@
+## 2023-04-26
+
+* Removed `pages/_document.js` in favour of a `<Layout>` component. The font is also set at the component level,
+	avoiding us having to use `'next/font'` in every page.
+
 ## 2023-04-25
 
 * Learned how to add custom styles to TailwindCSS, using [this
