@@ -2,9 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+	@apply text-gray;
+}
+
 @layer components {
 	.link {
-		@apply text-white;
 		@apply block;
 		@apply font-medium;
 		@apply text-6xl;
@@ -13,6 +16,6 @@
 	}
 
 	.link:hover {
-		@apply text-green;
+		@apply text-dark-gray;
 	}
 }

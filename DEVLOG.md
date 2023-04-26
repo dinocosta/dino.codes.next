@@ -2,6 +2,9 @@
 
 * Removed `pages/_document.js` in favour of a `<Layout>` component. The font is also set at the component level,
 	avoiding us having to use `'next/font'` in every page.
+* Introduce the `lib/sketches.js` file in order to keep information aobut the sketches, such as the id, the image
+	to be used in the preview and the sketche's description.
+* Introduce a new component `<SketchPreview>` to be used when rendering sketch previews in `/sketches`.
 
 ## 2023-04-25
 
