@@ -6,6 +6,7 @@
 	to be used in the preview and the sketche's description.
 * Introduce a new component `<SketchPreview>` to be used when rendering sketch previews in `/sketches`.
 * Decided to replace the colorscheme with something simpler, with just 4 colors.
+* Add some build errors because of missing `key` in some elements.
 
 ## 2023-04-25
 
