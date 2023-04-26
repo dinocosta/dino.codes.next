@@ -13,11 +13,13 @@ export async function getStaticProps() {
 
 export default function Sketches({ sketchesData }) {
 	return (
-		<div className="lg:pt-20 md:pt-10 pt-5">
-			<h1 className="block font-medium text-6xl lg:text-9xl mb-20">Sketches</h1>
-				{sketchesData.map(({ id, image, description }) => 
-					<SketchPreview id={id} image={image} description={description} />
-				)}
+		<div className='lg:pt-20 md:pt-10 pt-5'>
+			<h1 className='block font-medium text-6xl lg:text-9xl mb-20'>Sketches</h1>
+				<div className='grid grid-cols-3 lg:grid-cols-6'>
+					{sketchesData.map(({ id, image, description }) => 
+						<SketchPreview id={id} image={image} description={description} />
+					)}
+				</div>
 		</div>
 	)
 }
