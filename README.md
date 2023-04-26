@@ -44,6 +44,7 @@ List of things to be implemented:
 
 - [X] Choose font (or fonts) to be used - [Plus Jakarta Sans](https://fonts.google.com/specimen/Plus+Jakarta+Sans?query=Jakarta)
 - [X] Define colorscheme to be used throughout the website - [Japandi](inspiration/japandi_colorscheme.jpeg)
+	- Update on 2023-04-27 : I've decided to use something simpler with just 4 colors.
 - [X] Customize Tailwind's theme with colorscheme colors - [TailwindCSS: Adding Custom Styles](https://tailwindcss.com/docs/adding-custom-styles)
 - [ ] Setup `/sketches` page
 - [ ] Setup `/sketches/[id]` page so that each identifier maps to a specific .js page containing the sketch to be displayed

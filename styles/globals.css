@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 body {
-	@apply text-gray;
+	@apply bg-white;
+	@apply text-black;
 }
 
 @layer components {
@@ -16,6 +17,6 @@ body {
 	}
 
 	.link:hover {
-		@apply text-dark-gray;
+		@apply text-orange;
 	}
 }
