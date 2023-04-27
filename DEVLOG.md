@@ -1,3 +1,9 @@
+## 2023-04-27
+
+* Learned about [Dynamic Import](https://nextjs.org/docs/advanced-features/dynamic-import) in Next.JS and managed
+	to build the `/sketches/[id].js` page, where each sketch's .js file is loaded dynamically taking into account
+	the identifier in the path.
+
 ## 2023-04-26
 
 * Removed `pages/_document.js` in favour of a `<Layout>` component. The font is also set at the component level,
