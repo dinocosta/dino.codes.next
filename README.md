@@ -46,12 +46,14 @@ List of things to be implemented:
 - [X] Define colorscheme to be used throughout the website - [Japandi](inspiration/japandi_colorscheme.jpeg)
 	- Update on 2023-04-27 : I've decided to use something simpler with just 4 colors.
 - [X] Customize Tailwind's theme with colorscheme colors - [TailwindCSS: Adding Custom Styles](https://tailwindcss.com/docs/adding-custom-styles)
+- [ ] Update colorscheme (again) to the one in [this page](https://manonjouet.com/projects/mojo).
 - [ ] Setup `/sketches` page
 - [ ] Setup `/sketches/[id]` page so that each identifier maps to a specific .js page containing the sketch to be displayed
 - [ ] Setup `/posts` page
 - [ ] Setup `/posts/[id]` page so that each identifier maps to a Markdown file containing the post's content
 	- Double check we're able to render images this way
 - [ ] Try to use React in order to creat inputs to control variables in some of the sketches, in favour of using Tweakpane
+	- Try reading up on [useRef](https://react.dev/reference/react/useRef).
 - [ ] Use shapes for each of the website's section, for example, square for the "Posts", circle for the "Sketches", etc.
 	- [Some inspiration](https://www.creativeboom.com/uploads/articles/0f/0f4e193ba9164073646e67421eb37b4b26986c67_1620.png).
 
