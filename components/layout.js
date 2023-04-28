@@ -5,7 +5,7 @@ const jakarta = Plus_Jakarta_Sans({ subsets: ['latin'] });
 
 export default function Layout({ children }) {
 	return (
-		<div className={`px-5 md:px-10 lg:px-20 bg-light-gray min-h-screen ${jakarta.className}`}>
+		<div className={`container mx-auto bg-light-gray ${jakarta.className}`}>
 			<Head>
 				<title>dino.codes</title>
 			</Head>
