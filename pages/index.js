@@ -4,10 +4,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="my-2">
-      <Link
-        href="/"
-        className="block text-7xl font-medium transition-colors hover:text-yellow"
-      >
+      <Link href="/" className="block text-7xl font-medium transition-colors hover:text-yellow" >
         Posts
       </Link>
       <Link
