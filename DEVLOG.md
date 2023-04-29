@@ -1,3 +1,8 @@
+## 2023-04-29
+
+* Update colorscheme, once again.
+* Update layout to use `.container` class, I'm going to work on getting the content set up and will focus on getting a good design afterwards, I find myself spending way too much time trying to get a "beautiful" website design.
+
 ## 2023-04-27
 
 * Learned about [Dynamic Import](https://nextjs.org/docs/advanced-features/dynamic-import) in Next.JS and managed
