@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className="my-2">
       <Link
-        href="/"
+        href="/posts"
         className="block text-7xl font-medium transition-colors hover:text-yellow"
       >
         Posts

@@ -26,16 +26,18 @@
 	@apply my-4;
 }
 
-.post pre {
-	@apply bg-black;
-	@apply text-white;
+.post p { @apply my-2; }
+
+/* Since highlight.js does not highlight code in <code> inline tags, this adds a
+ * little bit of style to them 
+ * Using `:not(pre)` guarantees we only affect `<code>` tags that are not in code blocks. */
+.post :not(pre) > code {
 	@apply rounded;
+	@apply px-1;
+	@apply bg-white;
+	@apply text-black;
 }
 
-.post code {
-	@apply bg-black;
-	@apply text-white;
-	@apply px-2;
-	@apply rounded;
-	@apply align-middle;
-}
+/* Add some margint to code blocks and give them round corners */
+.post pre { @apply my-4; }
+.post pre code { @apply rounded-md; }
