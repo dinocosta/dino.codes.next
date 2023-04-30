@@ -1,44 +1,41 @@
-import fs from 'fs'
-import path from 'path'
-import matter from 'gray-matter'
-import { remark } from 'remark'
-import html from 'remark-html'
 import styles from './[id].module.css'
+import { getPostsData, getPost } from '@/lib/posts'
 
 export async function getStaticPaths() {
-  return {
-    paths: [{ params: { id: '1' } }],
-    fallback: false,
-  }
+  const postsData = getPostsData()
+  const paths = postsData.map(({ id }) => {
+    return {
+      params: { id: id },
+    }
+  })
+
+  return { paths: paths, fallback: false }
 }
 
-export async function getStaticProps() {
-  const postsDirectory = path.join(process.cwd(), 'posts')
-  const fileContent = fs.readFileSync(path.join(postsDirectory, 'markdown.md'), 'utf8')
-  const { content, data } = matter(fileContent)
-  const processedContent = await remark()
-  .use(html)
-  .process(content)
-	const htmlContent = processedContent.toString()
+export async function getStaticProps({ params }) {
+	const { content, date, title, description } = await getPost(params.id)
 
   return {
-    props: { 
-			content: htmlContent, 
-			date: data.date,
-			title: data.title,
-			description: data.description
-		},
+    props: {
+      content: content,
+      date: date,
+      title: title,
+      description: description,
+    },
   }
 }
 
 export default function Post({ content, date, title, description }) {
   return (
-		<div>
-			<h1 className='text-4xl font-medium'>{title}</h1>
-			<small>{description}</small>
-			<small>{date}</small>
+    <div>
+      <h1 className="text-4xl font-medium">{title}</h1>
+      <small>{description}</small>
+      <small>{date}</small>
 
-			<div className={styles.post} dangerouslySetInnerHTML={{ __html: content }}></div>
-		</div>
-	)
+      <div
+        className={styles.post}
+        dangerouslySetInnerHTML={{ __html: content }}
+      ></div>
+    </div>
+  )
 }

@@ -1,3 +1,8 @@
+## 2023-04-30
+
+* Learned how to enable [Prettier](https://prettier.io) in NeoVim.
+* Finished setting up the logic for reading and rendering the list of posts, as well as setting up each post page.
+
 ## 2023-04-29
 
 * Update colorscheme, once again.

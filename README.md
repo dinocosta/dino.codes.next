@@ -49,8 +49,8 @@ List of things to be implemented:
 - [X] Update colorscheme (again) to the one in [this page](https://manonjouet.com/projects/mojo).
 - [ ] Setup `/sketches` page
 - [ ] Setup `/sketches/[id]` page so that each identifier maps to a specific .js page containing the sketch to be displayed
-- [ ] Setup `/posts` page
-- [ ] Setup `/posts/[id]` page so that each identifier maps to a Markdown file containing the post's content
+- [X] Setup `/posts` page
+- [X] Setup `/posts/[id]` page so that each identifier maps to a Markdown file containing the post's content
 	- Double check we're able to render images this way
 - [ ] Try to use React in order to creat inputs to control variables in some of the sketches, in favour of using Tweakpane
 	- Try reading up on [useRef](https://react.dev/reference/react/useRef).

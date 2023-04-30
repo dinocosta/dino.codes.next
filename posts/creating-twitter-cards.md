@@ -1,6 +1,6 @@
 ---
 title: "How to make Twitter preview your website links"
-date: '2020-01-07T16:19:41Z'
+date: "2020-01-07T16:19:41Z"
 draft: false
 description: "Blogpost on how to update your website so that whenever you
 tweet about it Twitter displays a preview of the content."
@@ -8,7 +8,7 @@ tweet about it Twitter displays a preview of the content."
 
 If you use Twitter you may have already seen a URL tweeted like this:
 
-![Twitter Card Summary](/images/sketch_1.png)
+![Twitter Card Summary](/images/twitter_card_summary.png)
 
 However, you've also probably noticed not every tweet with a URL appears that
 way. That's because not all websites support [Twitter
@@ -76,7 +76,7 @@ Here's how these tags look like in the final HTML file:
 With the setup above, here's how your that page's URL will appear whenever
 it is tweeted:
 
-![Rendered Summary Card](/twitter_card_summary_legend.png)
+![Rendered Summary Card](/images/twitter_card_summary_legend.png)
 
 Comparing that with tweeting only the URL you can see that it's much more
 attention-grabbing and also allows the user to quickly infer what the URL is
@@ -87,7 +87,7 @@ If you wish for the image to be bigger you can also use the
 meta tag. In that case, the URL would be displayed like this:
 
 ![Rendered Summary With Large Image
-Card](/twitter_card_summary_with_large_image_legend.png)
+Card](/images/twitter_card_summary_with_large_image_legend.png)
 
 The Twitter Card is now bigger and the image is now the main focus of
 attention but the user is still able to capture information from the
