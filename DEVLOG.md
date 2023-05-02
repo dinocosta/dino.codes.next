@@ -1,3 +1,8 @@
+## 2023-05-02
+
+* Small tweaks to the layout. 
+* Learned how to use .svg with the `Image` component from `next/image`.
+
 ## 2023-04-30
 
 * Learned how to enable [Prettier](https://prettier.io) in NeoVim.

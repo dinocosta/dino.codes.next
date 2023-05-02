@@ -1,3 +1,5 @@
+import Image from 'next/image'
+import Link from 'next/link'
 import { useEffect } from 'react'
 import { getPostsData, getPost } from '@/lib/posts'
 import styles from './[id].module.css'
@@ -44,8 +46,17 @@ export default function Post({ content, date, title, description }) {
   }, [])
 
   return (
-    <div>
-      <h1 className="text-4xl font-medium">{title}</h1>
+		<div>
+			<Link href="/posts" className="my-8 block">
+				<Image
+					src="/svg/left-arrow.svg"
+					height="24"
+					width="24"
+					alt="Back button"
+				/>
+			</Link>
+			<h1 className="mb-8 block text-2xl font-medium">{title}</h1>
+
       <small>{description}</small>
       <small>{date}</small>
 

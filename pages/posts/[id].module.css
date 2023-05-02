@@ -34,7 +34,7 @@
 .post :not(pre) > code {
 	@apply rounded;
 	@apply px-1;
-	@apply bg-white;
+	@apply bg-cream;
 	@apply text-black;
 }
 
