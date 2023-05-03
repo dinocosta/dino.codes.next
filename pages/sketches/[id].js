@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import Layout from '@/components/layout'
 import dynamic from 'next/dynamic'
 
 export async function getStaticPaths() {
@@ -28,17 +29,10 @@ export default function Sketch({ sketchId }) {
   })
 
   return (
-    <div>
-      <Link href="/sketches" className="my-8 block">
-        <Image
-          src="/svg/left-arrow.svg"
-          height="24"
-          width="24"
-          alt="Back button"
-        />
-      </Link>
-
-      <Sketch />
-    </div>
+    <Layout>
+      <div>
+        <Sketch />
+      </div>
+    </Layout>
   )
 }

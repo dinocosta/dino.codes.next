@@ -2,6 +2,8 @@
 
 * Fixed the index page issue on Safari's iOS browser by changing the `.h-screen` class definition.
 * Update the index page logic so as to render the links given a list of objects with `href` and `text` keys, this should allow us to more easily add new links without having to duplicate calls to `Link`.
+* Refactored the `<Layout>` component, while also updating it so as to detect the current path and display a back button
+  if the user is not on the home page.
 
 ## 2023-05-02
 
