@@ -1,6 +1,6 @@
 ---
 title: "How to make Twitter preview your website links"
-date: "2020-01-07T16:19:41Z"
+date: "2020-01-07"
 draft: false
 description: "Blogpost on how to update your website so that whenever you
 tweet about it Twitter displays a preview of the content."

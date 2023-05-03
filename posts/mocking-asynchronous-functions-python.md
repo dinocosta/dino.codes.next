@@ -1,6 +1,6 @@
 ---
 title: "Mocking Asynchronous Functions In Python"
-date: "2020-02-18T22:12:15Z"
+date: "2020-02-18"
 draft: false
 description: "Post on how to mock asynchronous (asyncio) functions in Python."
 tags: ["Python"]

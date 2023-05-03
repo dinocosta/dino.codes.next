@@ -1,6 +1,6 @@
 ---
 title: "Tail Call Optimization in Elixir"
-date: "2020-03-09T19:14:45Z"
+date: "2020-03-09"
 draft: false
 description: "Explains what Tail Call Optimization is and shows how you can use it to reduce the
 memory consumption of Elixir applications."

@@ -1,6 +1,6 @@
 ---
 title: "Python Tuple Syntax Is Confusing"
-date: "2019-12-23T12:41:57Z"
+date: "2019-12-23"
 description: "Post about how Python's tuple syntax can make you run around trying to fix bugs that are easily
 avoided."
 draft: false

@@ -49,10 +49,10 @@ export default function Post({ content, date, title, description }) {
   return (
 		<Layout>
 			<div>
-				<h1 className="mb-8 block text-2xl font-medium">{title}</h1>
+				<h1 className="mb-4 block text-2xl font-medium">{title}</h1>
 
-				<small>{description}</small>
-				<small>{date}</small>
+				<small className="block mb-1 text-black text-opacity-50">{description}</small>
+				<small className="block text-black text-opacity-50">{date}</small>
 
 				<div
 					className={styles.post}

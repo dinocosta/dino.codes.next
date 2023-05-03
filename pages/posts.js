@@ -17,12 +17,17 @@ export default function Posts({ postsData }) {
       <div>
         <h1 className="mb-4 block text-2xl font-medium">Posts</h1>
         {postsData.map(({ id, title, date, description }) => (
-          <div key={id}>
-            <Link className="mb-2 block" href={`/posts/${id}`}>
-              <h2 className="text-xl">{title}</h2>
-              <small>{description}</small>
-            </Link>
-          </div>
+          <Link
+            key={id}
+            className="mb-2 block rounded bg-cream p-2"
+            href={`/posts/${id}`}
+          >
+            <h2 className="mb-2 text-xl">{title}</h2>
+            <small className="mb-1 block text-black text-opacity-50">
+              {description}
+            </small>
+            <small className="block text-black text-opacity-50">{date}</small>
+          </Link>
         ))}
       </div>
     </Layout>
