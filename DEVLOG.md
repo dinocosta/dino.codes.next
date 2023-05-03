@@ -1,6 +1,7 @@
 ## 2023-05-03
 
 * Fixed the index page issue on Safari's iOS browser by changing the `.h-screen` class definition.
+* Update the index page logic so as to render the links given a list of objects with `href` and `text` keys, this should allow us to more easily add new links without having to duplicate calls to `Link`.
 
 ## 2023-05-02
 

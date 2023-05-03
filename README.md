@@ -52,7 +52,7 @@ List of things to be implemented:
 - [X] Setup `/posts` page
 - [X] Setup `/posts/[id]` page so that each identifier maps to a Markdown file containing the post's content
 	- Double check we're able to render images this way
-- [ ] Update `pages/index.js` to iterate over a list of links instead of defining an element for each.
+- [X] Update `pages/index.js` to iterate over a list of links instead of defining an element for each.
 - [ ] Try to use React in order to creat inputs to control variables in some of the sketches, in favour of using Tweakpane
 	- Try reading up on [useRef](https://react.dev/reference/react/useRef).
 - [ ] Use shapes for each of the website's section, for example, square for the "Posts", circle for the "Sketches", etc.

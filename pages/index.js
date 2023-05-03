@@ -1,34 +1,27 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
+// List of links to be rendered in the index page.
+const links = [
+  { href: '/posts', text: 'Posts' },
+  { href: '/sketches', text: 'Sketches' },
+  { href: '/about', text: 'About' },
+]
+
 export default function Home() {
   return (
     <div className="flex h-screen">
       <div className="m-auto text-center">
-        <div>
+				{links.map(({ href, text }) => (
+					<div key={text}>
           <Link
-            href="/posts"
+            href={href}
             className="text-2xl font-medium transition-colors hover:text-yellow"
           >
-            Posts
+						{text}
           </Link>
-        </div>
-        <div>
-          <Link
-            href="/sketches"
-            className="text-2xl font-medium transition-colors hover:text-yellow"
-          >
-            Sketches
-          </Link>
-        </div>
-        <div>
-          <Link
-            href="/"
-            className="text-2xl font-medium transition-colors hover:text-yellow"
-          >
-            About
-          </Link>
-        </div>
+					</div>
+				))}
       </div>
     </div>
   )

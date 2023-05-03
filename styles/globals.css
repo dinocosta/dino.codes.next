@@ -2,29 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-	@apply bg-white;
-	@apply text-black;
-}
-
 /* Fixes the screen height for Safari on iOS, without this the index page would
 * extend past Safari's URL bar */
 @supports (-webkit-touch-callout: none) {
 	.h-screen {
 		height: -webkit-fill-available;
-	}
-}
-
-@layer components {
-	.link {
-		@apply block;
-		@apply font-medium;
-		@apply text-6xl;
-		@apply lg:text-9xl;
-		@apply transition-colors;
-	}
-
-	.link:hover {
-		@apply text-yellow;
 	}
 }
