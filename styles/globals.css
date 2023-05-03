@@ -10,7 +10,7 @@ body {
 /* Fixes the screen height for Safari on iOS, without this the index page would
 * extend past Safari's URL bar */
 @supports (-webkit-touch-callout: none) {
-	.min-h-screen {
+	.h-screen {
 		height: -webkit-fill-available;
 	}
 }

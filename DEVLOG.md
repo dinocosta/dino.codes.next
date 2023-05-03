@@ -1,3 +1,7 @@
+## 2023-05-03
+
+* Fixed the index page issue on Safari's iOS browser by changing the `.h-screen` class definition.
+
 ## 2023-05-02
 
 * Small tweaks to the layout. 
