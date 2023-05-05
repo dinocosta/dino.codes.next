@@ -6,18 +6,20 @@
 * Also, we can not simply use `ul`, we have to do something like `.post > ul` otherwise we get an error because the `ul`
 * selector is not pure, not 100% sure what this means but it's worth pointing out why this is done this way. */
 
+.post h1, .post h2, .post h3 {
+	@apply mt-8;
+	@apply mb-2;
+	@apply text-tangerine;
+}
+
 .post h1 {
 	@apply font-medium;
 	@apply text-4xl;
-	@apply mt-4;
-	@apply mb-2;
 }
 
 .post h2 {
 	@apply font-medium;
 	@apply text-2xl;
-	@apply mt-4;
-	@apply mb-2;
 }
 
 .post ul {
@@ -26,7 +28,17 @@
 	@apply my-4;
 }
 
-.post p { @apply my-2; }
+.post p { 
+	@apply my-2; 
+}
+
+.post a {
+	@apply underline;
+}
+
+.post img {
+	@apply m-auto;
+}
 
 /* Since highlight.js does not highlight code in <code> inline tags, this adds a
  * little bit of style to them 

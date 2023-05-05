@@ -39,7 +39,7 @@ export async function getStaticProps({ params }) {
   }
 }
 
-export default function Post({ content, date, title, description }) {
+export default function Post({ content, date, title }) {
 
   // Calls the syntax higlighting logic after all content has been loaded/rendered.
   useEffect(() => {
@@ -49,10 +49,8 @@ export default function Post({ content, date, title, description }) {
   return (
 		<Layout>
 			<div>
-				<h1 className="mb-4 block text-2xl font-medium">{title}</h1>
-
-				<small className="block mb-1 text-black text-opacity-50">{description}</small>
-				<small className="block text-black text-opacity-50">{date}</small>
+				<h1 className="mb-2 block text-2xl text-tangerine font-medium">{title}</h1>
+				<small className="block text-black text-opacity-50 mb-2">{date}</small>
 
 				<div
 					className={styles.post}

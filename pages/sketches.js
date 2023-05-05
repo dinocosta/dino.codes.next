@@ -18,7 +18,7 @@ export default function Sketches({ sketchesData }) {
   return (
     <Layout>
       <div>
-        <h1 className="mb-8 block text-2xl font-medium">Sketches</h1>
+        <h1 className="mb-8 block text-2xl font-medium text-tangerine">Sketches</h1>
         <div className="grid grid-cols-3 lg:grid-cols-6">
           {sketchesData.map(({ id, image, description }) => (
             <SketchPreview
