@@ -1,3 +1,9 @@
+## 2023-05-05
+
+* Changed the layout a little bit.
+* Updated the `/sketches` page so as to dynamically fill itself according to the files in `lib/sketches/` and the sketch
+  preview will be fetched from `public/images/sketches/`.
+
 ## 2023-05-03
 
 * Fixed the index page issue on Safari's iOS browser by changing the `.h-screen` class definition.
