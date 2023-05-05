@@ -25,7 +25,6 @@ export default function Sketches({ sketchesData }) {
               key={id}
               id={id}
               image={image}
-              description={description}
             />
           ))}
         </div>

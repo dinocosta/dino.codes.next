@@ -10,7 +10,6 @@ export default function SketchPreview({ id, image, description }) {
 			<Link href={`/sketches/${id}`} className='mt-auto'>
 				<h2 className='font-medium text-xl'>Sketch {id}</h2>
 			</Link>
-			<p className='text-gray'>{description}</p>
 		</div>
 	]
 }
