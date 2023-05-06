@@ -5,7 +5,7 @@ import SketchPreview from '@/components/sketch_preview'
 import { getSketchesData } from '@/lib/sketches'
 
 export async function getStaticProps() {
-  const sketchesData = getSketchesData()
+  const sketchesData = await getSketchesData()
 
   return {
     props: {

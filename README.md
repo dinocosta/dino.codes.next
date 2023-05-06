@@ -54,8 +54,8 @@ List of things to be implemented:
 	- Double check we're able to render images this way
 - [X] Update `pages/index.js` to iterate over a list of links instead of defining an element for each.
 - [X] Update the post's module CSS to center images
-- [ ] Fix issue where some sketches return 404 even though they ara an accepted path? For example `/sketches/4`.
-- [ ] Try to use React in order to creat inputs to control variables in some of the sketches, in favour of using Tweakpane
+- [X] Fix issue where some sketches return 404 even though they ara an accepted path? For example `/sketches/4`.
+- [X] Try to use React in order to creat inputs to control variables in some of the sketches, in favour of using Tweakpane
 	- Try reading up on [useRef](https://react.dev/reference/react/useRef).
 - [ ] Use shapes for each of the website's section, for example, square for the "Posts", circle for the "Sketches", etc.
 	- [Some inspiration](https://www.creativeboom.com/uploads/articles/0f/0f4e193ba9164073646e67421eb37b4b26986c67_1620.png).

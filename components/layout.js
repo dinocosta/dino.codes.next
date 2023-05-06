@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { useRouter } from 'next/router'
 import { Plus_Jakarta_Sans } from 'next/font/google'
 
-const jakarta = Plus_Jakarta_Sans({ subsets: ['latin'] })
+const font = Plus_Jakarta_Sans({ subsets: ['latin'] })
 
 // Takes a string which is the path of the curren page and returns the path of the page above, for
 // example, `pathAbove('/posts/new-post')` will return `/posts`.
@@ -27,7 +27,7 @@ export default function Layout({ children, path }) {
 
   return (
     <div
-      className={`container mx-auto bg-white px-4 text-black ${jakarta.className}`}
+      className={`container mx-auto bg-white px-4 text-black ${font.className}`}
     >
       <Head>
         <title>dino.codes</title>

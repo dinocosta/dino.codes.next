@@ -1,3 +1,8 @@
+## 2023-05-06
+
+* Fix the pages for sketches 3 and 4 by updating the `getStatichPaths` function in `pages/sketches/[id].js` in order to use the `getSketchesData` function from `lib/sketches.js`.
+* Managed to update sketch 4 with a small form that accepts a number for the rows and columns and updates the sketch.
+
 ## 2023-05-05
 
 * Changed the layout a little bit.

@@ -2,15 +2,21 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Layout from '@/components/layout'
 import dynamic from 'next/dynamic'
+import { getSketchesData } from '@/lib/sketches'
 
 export async function getStaticPaths() {
-  // TODO: Create function in `lib/sketches.js` which returns all the valid identifiers for the paths and
-  // make sure that this function is used by both this page and the `pages/sketches.js` file so
-  // that we always have both in sync.
-  return {
-    paths: [{ params: { id: '1' } }, { params: { id: '2' } }],
-    fallback: false,
-  }
+  const sketchesData = await getSketchesData()
+
+	const paths = sketchesData.map(({ id }) => {
+		return {
+			params: { id: id }
+		}
+	})
+
+	return {
+		paths: paths,
+		fallback: false
+	}
 }
 
 export async function getStaticProps({ params }) {

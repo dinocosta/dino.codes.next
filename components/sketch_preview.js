@@ -6,7 +6,7 @@ export default function SketchPreview({ id, image, description }) {
     <Link href={`/sketches/${id}`} className="mt-auto">
       <div
         key={`${id}_image`}
-        className="relative col-span-2 mb-10 aspect-square w-full drop-shadow-md"
+        className="relative col-span-2 mb-2 aspect-square w-full"
       >
         <Image
           src={image}
