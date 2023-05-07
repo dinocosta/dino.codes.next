@@ -9,3 +9,8 @@
 		height: -webkit-fill-available;
 	}
 }
+
+body {
+	@apply bg-neutral-200;
+	@apply text-neutral-900;
+}

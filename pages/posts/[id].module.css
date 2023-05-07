@@ -9,7 +9,6 @@
 .post h1, .post h2, .post h3 {
 	@apply mt-8;
 	@apply mb-2;
-	@apply text-tangerine;
 }
 
 .post h1 {
@@ -33,21 +32,21 @@
 }
 
 .post a {
-	@apply underline;
+	@apply text-blue-500;
 }
 
 .post img {
 	@apply m-auto;
+	@apply rounded-md;
 }
 
 /* Since highlight.js does not highlight code in <code> inline tags, this adds a
  * little bit of style to them 
  * Using `:not(pre)` guarantees we only affect `<code>` tags that are not in code blocks. */
 .post :not(pre) > code {
-	@apply rounded;
+	@apply rounded-md;
+	@apply bg-neutral-50;
 	@apply px-1;
-	@apply bg-cream;
-	@apply text-black;
 }
 
 /* Add some margint to code blocks and give them round corners */

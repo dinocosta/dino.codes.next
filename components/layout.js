@@ -27,7 +27,7 @@ export default function Layout({ children, path }) {
 
   return (
     <div
-      className={`container mx-auto bg-white px-4 text-black ${font.className}`}
+      className={`container mx-auto px-4 ${font.className}`}
     >
       <Head>
         <title>dino.codes</title>

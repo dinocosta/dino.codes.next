@@ -1,3 +1,7 @@
+## 2023-05-07
+
+* Update colorscheme to use Tailwind's default colors.
+
 ## 2023-05-06
 
 * Fix the pages for sketches 3 and 4 by updating the `getStatichPaths` function in `pages/sketches/[id].js` in order to use the `getSketchesData` function from `lib/sketches.js`.
