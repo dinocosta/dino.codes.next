@@ -68,7 +68,7 @@ export default function About() {
         Feel free to find me in any of these platforms!
         <ul className="ml-5 list-disc">
           {links.map(({ href, text }) => (
-            <li>
+            <li key={`link-text`}>
               <Link href={href} className="text-blue-500">
                 {text}
               </Link>
