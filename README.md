@@ -57,6 +57,9 @@ List of things to be implemented:
 - [X] Fix issue where some sketches return 404 even though they ara an accepted path? For example `/sketches/4`.
 - [X] Try to use React in order to creat inputs to control variables in some of the sketches, in favour of using Tweakpane
 	- Try reading up on [useRef](https://react.dev/reference/react/useRef).
+- [X] Fill out `/about` page.
+- [ ] Add small descriptions to each sketch and links to [canvas-sketch](https://github.com/mattdesl/canvas-sketch).
+- [ ] Create a `<Link>` component that sets the styles to avoid having to repeat the styles multiple times.
 - [ ] Use shapes for each of the website's section, for example, square for the "Posts", circle for the "Sketches", etc.
 	- [Some inspiration](https://www.creativeboom.com/uploads/articles/0f/0f4e193ba9164073646e67421eb37b4b26986c67_1620.png).
 

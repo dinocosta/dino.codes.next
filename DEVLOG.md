@@ -1,6 +1,7 @@
 ## 2023-05-07
 
 * Update colorscheme to use Tailwind's default colors.
+* Fill out `/about` page.
 
 ## 2023-05-06
 
