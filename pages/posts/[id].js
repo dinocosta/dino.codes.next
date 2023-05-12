@@ -49,8 +49,8 @@ export default function Post({ content, date, title }) {
   return (
 		<Layout>
 			<div>
-				<h1 className="mb-2 block text-2xl text-yellow-500 font-medium">{title}</h1>
-				<small className="block mb-2 text-neutral-400">{date}</small>
+				<h1 className="mb-2 block text-2xl text-blue dark:text-yellow font-medium">{title}</h1>
+				<small className="block mb-2 text-gray">{date}</small>
 
 				<div
 					className={styles.post}

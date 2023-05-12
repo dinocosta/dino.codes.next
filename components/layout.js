@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Image from 'next/image'
+import { ArrowLongLeftIcon } from '@heroicons/react/24/solid'
 import { useRouter } from 'next/router'
 import { Plus_Jakarta_Sans } from 'next/font/google'
 
@@ -19,30 +19,27 @@ function pathAbove(path) {
 	return newPath.join('/') || '/'
 }
 
-export default function Layout({ children, path }) {
+export default function Layout({ children }) {
 	// Fetch the current page's path, if it's different from the index page ('/') we are going to show the left arrow
 	// button so users can navigate back to the page above (not previous, as in going back in the browser), which can be determined by deleting the suffix after the last `/`, 
 	// for example, for `/posts/this-is-a-post`, the page above would be `/posts`.
 	const { asPath } = useRouter()
 
-  return (
-    <div
-      className={`container mx-auto px-4 ${font.className}`}
-    >
-      <Head>
-        <title>dino.codes</title>
-      </Head>
-			{ asPath != '/' && 
-        <Link href={pathAbove(asPath)} className="my-4 block">
-          <Image
-            src="/svg/left-arrow.svg"
-            height="24"
-            width="24"
-            alt="Back button"
-          />
-        </Link>
+	return (
+		<div
+			className={`container mx-auto px-4 ${font.className}`}
+		>
+			<Head>
+				<title>dino.codes</title>
+			</Head>
+			{asPath != '/' &&
+				<Link href={pathAbove(asPath)} className="my-4 flex">
+					<div className="py-2 px-4 bg-yellow dark:bg-blue rounded-full">
+						<ArrowLongLeftIcon className="h-6 w-6 fill-white dark:fill-black" />
+					</div>
+				</Link>
 			}
-      {children}
-    </div>
-  )
+			{children}
+		</div>
+	)
 }

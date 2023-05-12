@@ -1,3 +1,8 @@
+## 2023-05-12
+
+* Update colorscheme in Tailwind's configuration.
+* Install and use Heroicons.
+
 ## 2023-05-07
 
 * Update colorscheme to use Tailwind's default colors.

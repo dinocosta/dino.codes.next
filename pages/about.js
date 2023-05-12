@@ -15,7 +15,7 @@ const links = [
 export default function About() {
   return (
     <Layout>
-      <h1 className="mb-4 block text-2xl font-medium text-yellow-500">About</h1>
+      <h1 className="mb-4 block text-2xl font-medium text-blue dark:text-yellow">About</h1>
 
       <div className="relative h-64 w-full">
         <Image
@@ -31,15 +31,15 @@ export default function About() {
       </p>
       <p className="py-2">
         I’m currently working at{' '}
-        <Link href="https://remote.com" className="text-blue-500">
+        <Link href="https://remote.com" className="text-blue dark:text-yellow">
           Remote
         </Link>
         , but I’ve previously worked at{' '}
-        <Link href="https://onfido.com" className="text-blue-500">
+        <Link href="https://onfido.com" className="text-blue dark:text-yellow">
           Onfido
         </Link>{' '}
         and{' '}
-        <Link href="https://unbabel.com" className="text-blue=500">
+        <Link href="https://unbabel.com" className="text-blue dark:text-yellow">
           Unbabel
         </Link>
         .
@@ -53,7 +53,7 @@ export default function About() {
       </p>
       <p className="py-2">
         Finally, I’m currently an Elixir mentor at{' '}
-        <Link href="https://exercism.org" className="text-blue-500">
+        <Link href="https://exercism.org" className="text-blue dark:text-yellow">
           Exercism
         </Link>
         , which does help me to get better at explaining concepts and ideas to
@@ -69,7 +69,7 @@ export default function About() {
         <ul className="ml-5 list-disc">
           {links.map(({ href, text }) => (
             <li key={`link-text`}>
-              <Link href={href} className="text-blue-500">
+              <Link href={href} className="text-blue dark:text-yellow">
                 {text}
               </Link>
             </li>

@@ -11,6 +11,11 @@
 }
 
 body {
-	@apply bg-neutral-200;
-	@apply text-neutral-900;
+	/* Light Mode */
+	@apply bg-white;
+	@apply text-black;
+
+	/* Dark Mode */
+	@apply dark:bg-black;
+	@apply dark:text-white;
 }
