@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { ArrowLongLeftIcon } from '@heroicons/react/24/solid'
 import { useRouter } from 'next/router'
 import { Plus_Jakarta_Sans } from 'next/font/google'
+import PillButton from '@/components/pill_button'
 
 const font = Plus_Jakarta_Sans({ subsets: ['latin'] })
 
@@ -33,11 +34,11 @@ export default function Layout({ children }) {
 				<title>dino.codes</title>
 			</Head>
 			{asPath != '/' &&
-				<Link href={pathAbove(asPath)} className="my-4 flex">
-					<div className="py-2 px-4 bg-yellow dark:bg-blue rounded-full">
-						<ArrowLongLeftIcon className="h-6 w-6 fill-white dark:fill-black" />
-					</div>
-				</Link>
+				<PillButton>
+					<Link href={pathAbove(asPath)}>
+						<ArrowLongLeftIcon className="h-6 w-6 fill-black dark:fill-white" />
+					</Link>
+				</PillButton>
 			}
 			{children}
 		</div>

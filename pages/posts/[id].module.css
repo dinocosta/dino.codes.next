@@ -6,6 +6,7 @@
 * Also, we can not simply use `ul`, we have to do something like `.post > ul` otherwise we get an error because the `ul`
 * selector is not pure, not 100% sure what this means but it's worth pointing out why this is done this way. */
 
+
 .post h1, .post h2, .post h3 {
 	@apply mt-8;
 	@apply mb-2;
@@ -33,6 +34,7 @@
 
 .post a {
 	@apply text-blue;
+	@apply dark:text-yellow;
 }
 
 .post img {
@@ -45,9 +47,11 @@
  * Using `:not(pre)` guarantees we only affect `<code>` tags that are not in code blocks. */
 .post :not(pre) > code {
 	@apply rounded-md;
-	@apply bg-white;
-	@apply text-black;
+	@apply bg-gray;
+	@apply text-white;
+	@apply dark:text-white;
 	@apply px-1;
+	@apply py-0.5;
 }
 
 /* Add some margint to code blocks and give them round corners */

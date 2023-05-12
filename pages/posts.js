@@ -19,7 +19,7 @@ export default function Posts({ postsData }) {
         {postsData.map(({ id, title, date, description }) => (
           <Link
             key={id}
-            className="mb-2 block rounded py-2 transition-colors"
+            className="mb-2 block rounded-md py-2 transition-colors"
             href={`/posts/${id}`}
           >
             <h2 className="mb-2 text-xl">{title}</h2>
