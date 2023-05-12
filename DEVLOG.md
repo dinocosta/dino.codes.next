@@ -2,6 +2,7 @@
 
 * Update colorscheme in Tailwind's configuration.
 * Install and use Heroicons.
+* Create new component, `PillButton`, to make it easier to create pill buttons.
 
 ## 2023-05-07
 
