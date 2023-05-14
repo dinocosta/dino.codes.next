@@ -1,6 +1,6 @@
 import Link from 'next/link'
-import Image from 'next/image'
 import Layout from '@/components/layout'
+import PageTitle from '@/components/page_title'
 import { getPostsData } from '@/lib/posts'
 
 export async function getStaticProps() {
@@ -15,7 +15,8 @@ export default function Posts({ postsData }) {
   return (
     <Layout>
       <div>
-        <h1 className="mb-4 block text-2xl font-medium text-blue dark:text-yellow">Posts</h1>
+				<PageTitle title='Posts' />
+
         {postsData.map(({ id, title, date, description }) => (
           <Link
             key={id}
@@ -23,11 +24,11 @@ export default function Posts({ postsData }) {
             href={`/posts/${id}`}
           >
             <h2 className="mb-2 text-xl">{title}</h2>
-            <small className="mb-1 block text-gray">
+            <small className="mb-1 block text-neutral-400">
               {description}
             </small>
-            <small className="block mb-4 text-gray">{date}</small>
-						<hr className="border-1 border-gray"/>
+            <small className="block mb-4 text-neutral-400">{date}</small>
+						<hr className="border-1 border-neutral-600"/>
           </Link>
         ))}
       </div>

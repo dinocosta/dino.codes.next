@@ -33,8 +33,7 @@
 }
 
 .post a {
-	@apply text-blue;
-	@apply dark:text-yellow;
+	@apply text-yellow-300;
 }
 
 .post img {
@@ -47,8 +46,8 @@
  * Using `:not(pre)` guarantees we only affect `<code>` tags that are not in code blocks. */
 .post :not(pre) > code {
 	@apply rounded-md;
-	@apply bg-gray;
-	@apply text-white;
+	@apply bg-neutral-800;
+	@apply text-neutral-200;
 	@apply dark:text-white;
 	@apply px-1;
 	@apply py-0.5;

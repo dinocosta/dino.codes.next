@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import Layout from '@/components/layout'
+import PageTitle from '@/components/page_title'
 
 const links = [
   { href: 'https://soundcloud.com/dino-costa-180136083', text: 'Soundcloud' },
@@ -15,7 +16,7 @@ const links = [
 export default function About() {
   return (
     <Layout>
-      <h1 className="mb-4 block text-2xl font-medium text-blue dark:text-yellow">About</h1>
+      <PageTitle title="About" />
 
       <div className="relative h-64 w-full">
         <Image
@@ -31,15 +32,15 @@ export default function About() {
       </p>
       <p className="py-2">
         I’m currently working at{' '}
-        <Link href="https://remote.com" className="text-blue dark:text-yellow">
+        <Link href="https://remote.com" className="text-yellow-300">
           Remote
         </Link>
         , but I’ve previously worked at{' '}
-        <Link href="https://onfido.com" className="text-blue dark:text-yellow">
+        <Link href="https://onfido.com" className="text-yellow-300">
           Onfido
         </Link>{' '}
         and{' '}
-        <Link href="https://unbabel.com" className="text-blue dark:text-yellow">
+        <Link href="https://unbabel.com" className="text-yellow-300">
           Unbabel
         </Link>
         .
@@ -69,7 +70,7 @@ export default function About() {
         <ul className="ml-5 list-disc">
           {links.map(({ href, text }) => (
             <li key={`link-text`}>
-              <Link href={href} className="text-blue dark:text-yellow">
+              <Link href={href} className="text-yellow-300">
                 {text}
               </Link>
             </li>

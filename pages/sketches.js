@@ -1,7 +1,6 @@
-import Image from 'next/image'
-import Link from 'next/link'
 import Layout from '@/components/layout'
 import SketchPreview from '@/components/sketch_preview'
+import PageTitle from '@/components/page_title'
 import { getSketchesData } from '@/lib/sketches'
 
 export async function getStaticProps() {
@@ -18,7 +17,7 @@ export default function Sketches({ sketchesData }) {
   return (
     <Layout>
       <div>
-        <h1 className="mb-8 block text-2xl font-medium text-blue dark:text-yellow">Sketches</h1>
+				<PageTitle title='Sketches' />
         <div className="grid gap-2 grid-cols-2">
           {sketchesData.map(({ id, image, description }) => (
             <SketchPreview

@@ -12,10 +12,10 @@
 
 body {
 	/* Light Mode */
-	@apply bg-white;
-	@apply text-black;
+	@apply bg-neutral-200;
+	@apply text-neutral-900;
 
 	/* Dark Mode */
-	@apply dark:bg-black;
-	@apply dark:text-white;
+	@apply dark:bg-neutral-900;
+	@apply dark:text-neutral-200;
 }

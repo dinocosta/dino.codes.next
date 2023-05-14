@@ -18,7 +18,7 @@ export default function Home() {
 						<div key={text}>
 							<Link
 								href={href}
-								className="text-2xl font-medium transition-colors hover:text-blue hover:dark:text-yellow"
+								className="text-2xl font-medium transition-colors hover:text-yellow-300"
 							>
 								{text}
 							</Link>
