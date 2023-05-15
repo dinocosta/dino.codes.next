@@ -1,3 +1,11 @@
+## 2023-05-15
+
+* Change some colors to work better on light mode.
+
+## 2023-05-14
+
+* Create new `<PageTitle>` component.
+
 ## 2023-05-12
 
 * Update colorscheme in Tailwind's configuration.
