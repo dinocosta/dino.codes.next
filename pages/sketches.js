@@ -1,4 +1,5 @@
 import Layout from '@/components/layout'
+import Link from '@/components/link'
 import SketchPreview from '@/components/sketch_preview'
 import PageTitle from '@/components/page_title'
 import { getSketchesData } from '@/lib/sketches'
@@ -18,7 +19,12 @@ export default function Sketches({ sketchesData }) {
     <Layout>
       <div>
 				<PageTitle title='Sketches' />
-        <div className="grid gap-2 grid-cols-2">
+
+				<p className="mb-4">
+					A collection of computer-generated images or animations built using <Link href="https://github.com/mattdesl/canvas-sketch">canvas-sketch</Link>.
+				</p>
+
+        <div className="grid gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
           {sketchesData.map(({ id, image, description }) => (
             <SketchPreview
 							className="sketch-preview"
