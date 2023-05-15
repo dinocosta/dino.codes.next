@@ -1,6 +1,8 @@
 ## 2023-05-16
 
 * Create new components for links.
+* Updated sketches with some text and new controls.
+* Updated the `PageTitle` component to actually set the tab's title.
 
 ## 2023-05-15
 

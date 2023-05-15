@@ -62,7 +62,7 @@ List of things to be implemented:
 - [X] Create a `<Link>` component that sets the styles to avoid having to repeat the styles multiple times.
 - [ ] Use shapes for each of the website's section, for example, square for the "Posts", circle for the "Sketches", etc.
 	- [Some inspiration](https://www.creativeboom.com/uploads/articles/0f/0f4e193ba9164073646e67421eb37b4b26986c67_1620.png).
-- [ ] Update the `PageTitle` component to actually set the webpage's title so it shows up in the tab name.
+- [X] Update the `PageTitle` component to actually set the webpage's title so it shows up in the tab name.
 
 ### Inspiration
 

@@ -1,4 +1,4 @@
-import Link from '@components/link'
+import Link from 'next/link'
 import Layout from '@/components/layout'
 
 // List of links to be rendered in the index page.
