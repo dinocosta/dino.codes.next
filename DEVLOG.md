@@ -1,3 +1,7 @@
+## 2023-05-16
+
+* Create new components for links.
+
 ## 2023-05-15
 
 * Change some colors to work better on light mode.

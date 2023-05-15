@@ -1,5 +1,4 @@
-import Image from 'next/image'
-import Link from 'next/link'
+import Link from '@components/link'
 import Layout from '@/components/layout'
 
 // List of links to be rendered in the index page.
@@ -18,7 +17,7 @@ export default function Home() {
 						<div key={text}>
 							<Link
 								href={href}
-								className="text-2xl font-medium transition-colors hover:text-yellow-500 hover:dark:text-yellow-300"
+								className="text-2xl font-normal transition-colors hover:text-orange-500 hover:dark:text-yellow-300"
 							>
 								{text}
 							</Link>

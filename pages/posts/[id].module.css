@@ -13,12 +13,12 @@
 }
 
 .post h1 {
-	@apply font-medium;
+	@apply font-normal;
 	@apply text-4xl;
 }
 
 .post h2 {
-	@apply font-medium;
+	@apply font-normal;
 	@apply text-2xl;
 }
 
@@ -33,7 +33,7 @@
 }
 
 .post a {
-	@apply text-yellow-500;
+	@apply text-orange-500;
 	@apply dark:text-yellow-300;
 }
 
@@ -47,9 +47,9 @@
  * Using `:not(pre)` guarantees we only affect `<code>` tags that are not in code blocks. */
 .post :not(pre) > code {
 	@apply rounded-md;
-	@apply bg-neutral-800;
-	@apply text-neutral-200;
-	@apply dark:text-white;
+	@apply bg-neutral-300;
+	@apply dark:bg-neutral-700;
+	@apply dark:text-neutral-200;
 	@apply px-1;
 	@apply py-0.5;
 }

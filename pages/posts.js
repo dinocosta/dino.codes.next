@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from '@/components/link'
 import Layout from '@/components/layout'
 import PageTitle from '@/components/page_title'
 import { getPostsData } from '@/lib/posts'
@@ -24,11 +24,11 @@ export default function Posts({ postsData }) {
             href={`/posts/${id}`}
           >
             <h2 className="mb-2 text-xl">{title}</h2>
-            <small className="mb-1 block text-neutral-400">
+            <small className="mb-1 block text-neutral-500">
               {description}
             </small>
-            <small className="block mb-4 text-neutral-400">{date}</small>
-						<hr className="border-1 border-neutral-600"/>
+            <small className="block mb-4 text-neutral-500">{date}</small>
+						<hr className="border-1 border-neutral-300"/>
           </Link>
         ))}
       </div>

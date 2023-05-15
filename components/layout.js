@@ -1,11 +1,11 @@
 import Head from 'next/head'
-import Link from 'next/link'
+import Link from '@/components/link'
 import { ArrowLongLeftIcon } from '@heroicons/react/24/solid'
 import { useRouter } from 'next/router'
-import { Plus_Jakarta_Sans } from 'next/font/google'
+import { Sora as Font } from 'next/font/google'
 import PillButton from '@/components/pill_button'
 
-const font = Plus_Jakarta_Sans({ subsets: ['latin'] })
+const font = Font({ subsets: ['latin'] })
 
 // Takes a string which is the path of the curren page and returns the path of the page above, for
 // example, `pathAbove('/posts/new-post')` will return `/posts`.
@@ -28,17 +28,17 @@ export default function Layout({ children }) {
 
 	return (
 		<div
-			className={`container mx-auto px-4 ${font.className}`}
+			className={`container mx-auto px-4 font-light ${font.className}`}
 		>
 			<Head>
 				<title>dino.codes</title>
 			</Head>
 			{asPath != '/' &&
-				<PillButton>
-					<Link href={pathAbove(asPath)}>
+				<Link href={pathAbove(asPath)}>
+					<PillButton>
 						<ArrowLongLeftIcon className="h-6 w-6 fill-black dark:fill-white" />
-					</Link>
-				</PillButton>
+					</PillButton>
+				</Link>
 			}
 			{children}
 		</div>

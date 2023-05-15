@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import Link from 'next/link'
+import Link from '@/components/link'
 import Layout from '@/components/layout'
 import PageTitle from '@/components/page_title'
 
@@ -32,15 +32,15 @@ export default function About() {
       </p>
       <p className="py-2">
         I’m currently working at{' '}
-        <Link href="https://remote.com" className="text-yellow-500 dark:text-yellow-300">
+        <Link href="https://remote.com">
           Remote
         </Link>
         , but I’ve previously worked at{' '}
-        <Link href="https://onfido.com" className="text-yellow-500 dark:text-yellow-300">
+        <Link href="https://onfido.com">
           Onfido
         </Link>{' '}
         and{' '}
-        <Link href="https://unbabel.com" className="text-yellow-500 dark:text-yellow-300">
+        <Link href="https://unbabel.com">
           Unbabel
         </Link>
         .
@@ -54,7 +54,7 @@ export default function About() {
       </p>
       <p className="py-2">
         Finally, I’m currently an Elixir mentor at{' '}
-        <Link href="https://exercism.org" className="text-yellow-500 dark:text-yellow-300">
+        <Link href="https://exercism.org">
           Exercism
         </Link>
         , which does help me to get better at explaining concepts and ideas to
@@ -70,7 +70,7 @@ export default function About() {
         <ul className="ml-5 list-disc">
           {links.map(({ href, text }) => (
             <li key={`link-text`}>
-              <Link href={href} className="text-yellow-500 dark:text-yellow-300">
+              <Link href={href}>
                 {text}
               </Link>
             </li>
