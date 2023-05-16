@@ -1,3 +1,7 @@
+## 2023-05-17
+
+* Center text in sketch 1.
+
 ## 2023-05-16
 
 * Create new components for links.
