@@ -28,7 +28,7 @@ export default function Layout({ children }) {
 
 	return (
 		<div
-			className={`container mx-auto px-4 font-light ${font.className}`}
+			className={`container overflow-visible mx-auto px-4 font-light ${font.className}`}
 		>
 			<Head>
 				<title>dino.codes</title>
@@ -36,7 +36,7 @@ export default function Layout({ children }) {
 			{asPath != '/' &&
 				<Link href={pathAbove(asPath)}>
 					<PillButton>
-						<ArrowLongLeftIcon className="h-6 w-6 fill-black dark:fill-white" />
+						<ArrowLongLeftIcon className="h-6 w-6 fill-orange-800 dark:fill-yellow-800" />
 					</PillButton>
 				</Link>
 			}

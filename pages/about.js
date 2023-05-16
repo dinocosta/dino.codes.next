@@ -18,11 +18,12 @@ export default function About() {
     <Layout>
       <PageTitle title="About" />
 
-      <div className="relative h-64 w-full">
+      <div className="mx-auto relative h-80 md:h-96 lg:h-112 max-w-lg">
         <Image
           fill
           src="/about.jpg"
-          className="w-full rounded-md object-cover"
+					alt="dino"
+          className="rounded-md object-cover"
         />
       </div>
       <br />
