@@ -1,9 +1,10 @@
 ## 2023-05-17
 
-* Center text in sketch 1.
+* Update Sketch 4's form.
 
 ## 2023-05-16
 
+* Center text in sketch 1.
 * Create new components for links.
 * Updated sketches with some text and new controls.
 * Updated the `PageTitle` component to actually set the tab's title.
