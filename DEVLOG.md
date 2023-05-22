@@ -1,6 +1,7 @@
 ## 2023-05-22
 
 * Update Sketch 1 with a heroicon in the button, just for fun.
+* Update spacing in posts page to have more space between image and paragraphs and also increase line-height.
 
 ## 2023-05-17
 

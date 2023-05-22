@@ -8,8 +8,8 @@
 
 
 .post h1, .post h2, .post h3 {
-	@apply mt-8;
-	@apply mb-2;
+	@apply mt-10;
+	@apply mb-4;
 }
 
 .post h1 {
@@ -30,6 +30,7 @@
 
 .post p { 
 	@apply my-2; 
+	@apply text-base/7;
 }
 
 .post a {
@@ -38,7 +39,8 @@
 }
 
 .post img {
-	@apply m-auto;
+	@apply mx-auto;
+	@apply my-8;
 	@apply rounded-md;
 }
 
@@ -55,5 +57,5 @@
 }
 
 /* Add some margint to code blocks and give them round corners */
-.post pre { @apply my-4; }
+.post pre { @apply my-8; }
 .post pre code { @apply rounded-md; }
