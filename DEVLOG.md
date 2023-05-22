@@ -2,6 +2,7 @@
 
 * Update Sketch 1 with a heroicon in the button, just for fun.
 * Update spacing in posts page to have more space between image and paragraphs and also increase line-height.
+* Update sketches button and text explanation so that the controls are shown first and the explanation last.
 
 ## 2023-05-17
 
