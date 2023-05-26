@@ -38,32 +38,6 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-## Roadmap
-
-List of things to be implemented:
-
-- [X] Choose font (or fonts) to be used - [Plus Jakarta Sans](https://fonts.google.com/specimen/Plus+Jakarta+Sans?query=Jakarta)
-- [X] Define colorscheme to be used throughout the website - [Japandi](inspiration/japandi_colorscheme.jpeg)
-	- Update on 2023-04-27 : I've decided to use something simpler with just 4 colors.
-- [X] Customize Tailwind's theme with colorscheme colors - [TailwindCSS: Adding Custom Styles](https://tailwindcss.com/docs/adding-custom-styles)
-- [X] Update colorscheme (again) to the one in [this page](https://manonjouet.com/projects/mojo).
-- [X] Setup `/sketches` page
-- [X] Setup `/sketches/[id]` page so that each identifier maps to a specific .js page containing the sketch to be displayed
-- [X] Setup `/posts` page
-- [X] Setup `/posts/[id]` page so that each identifier maps to a Markdown file containing the post's content
-	- Double check we're able to render images this way
-- [X] Update `pages/index.js` to iterate over a list of links instead of defining an element for each.
-- [X] Update the post's module CSS to center images
-- [X] Fix issue where some sketches return 404 even though they ara an accepted path? For example `/sketches/4`.
-- [X] Try to use React in order to creat inputs to control variables in some of the sketches, in favour of using Tweakpane
-	- Try reading up on [useRef](https://react.dev/reference/react/useRef).
-- [X] Fill out `/about` page.
-- [X] Add small descriptions to each sketch and links to [canvas-sketch](https://github.com/mattdesl/canvas-sketch).
-- [X] Create a `<Link>` component that sets the styles to avoid having to repeat the styles multiple times.
-- [ ] Use shapes for each of the website's section, for example, square for the "Posts", circle for the "Sketches", etc.
-	- [Some inspiration](https://www.creativeboom.com/uploads/articles/0f/0f4e193ba9164073646e67421eb37b4b26986c67_1620.png).
-- [X] Update the `PageTitle` component to actually set the webpage's title so it shows up in the tab name.
-
 ### Inspiration
 
 ![Wolff Olins Menu](inspiration/wolffolins_com.png)
