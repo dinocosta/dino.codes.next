@@ -3,9 +3,9 @@ import Layout from '@/components/layout'
 
 // List of links to be rendered in the index page.
 const links = [
-  { href: '/posts', text: 'Posts' },
-  { href: '/sketches', text: 'Sketches' },
-  { href: '/about', text: 'About' },
+  { href: '/posts', text: 'Posts', animation: 'animate-[slidein_500ms_ease-in]' },
+  { href: '/sketches', text: 'Sketches', animation: 'animate-[slidein_750ms_ease-in]' },
+  { href: '/about', text: 'About', animation: 'animate-[slidein_1000ms_ease-in]' },
 ]
 
 export default function Home() {
@@ -13,8 +13,8 @@ export default function Home() {
 		<Layout>
 			<div className="flex h-screen">
 				<div className="m-auto text-center">
-					{links.map(({ href, text }) => (
-						<div key={text}>
+					{links.map(({ href, text, animation }) => (
+						<div key={text} className={animation}>
 							<Link
 								href={href}
 								className="text-2xl font-normal transition-colors hover:text-orange-500 hover:dark:text-yellow-300"

@@ -1,3 +1,8 @@
+## 2023-05-26
+
+* Learned more about Tailwind's animations - https://tailwindcss.com/docs/animation .
+* Created a simple slide-in animation for the homepage links.
+
 ## 2023-05-22
 
 * Update Sketch 1 with a heroicon in the button, just for fun.
