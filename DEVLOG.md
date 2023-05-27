@@ -3,6 +3,7 @@
 * Fixed index page animation to use `ease-in-out` instead of only `ease-in`, as that was "snapping" the links at the end of the animation.
 * Cleaned up sketches to keep only the desired sketches.
 * Add Terrain Generation sketch.
+* Add Download button to Sketch 3.
 
 ## 2023-05-26
 
