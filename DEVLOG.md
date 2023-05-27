@@ -4,6 +4,7 @@
 * Cleaned up sketches to keep only the desired sketches.
 * Add Terrain Generation sketch.
 * Add Download button to Sketch 3.
+* Create react component which allows sketches to be downloaded.
 
 ## 2023-05-26
 
