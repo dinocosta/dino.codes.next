@@ -1,3 +1,7 @@
+## 2023-05-27
+
+* Fixed index page animation to use `ease-in-out` instead of only `ease-in`, as that was "snapping" the links at the end of the animation.
+
 ## 2023-05-26
 
 * Learned more about Tailwind's animations - https://tailwindcss.com/docs/animation .
