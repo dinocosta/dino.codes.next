@@ -1,3 +1,8 @@
+## 2023-05-31
+
+* Changed the back button to be inside a sticky div located at the top of the website, so that the back button is always acessible.
+
+
 ## 2023-05-27
 
 * Fixed index page animation to use `ease-in-out` instead of only `ease-in`, as that was "snapping" the links at the end of the animation.

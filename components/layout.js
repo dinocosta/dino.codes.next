@@ -34,11 +34,13 @@ export default function Layout({ children }) {
 				<title>dino.codes</title>
 			</Head>
 			{asPath != '/' &&
-				<Link href={pathAbove(asPath)}>
-					<PillButton>
-						<ArrowLongLeftIcon className="h-6 w-6 fill-orange-800 dark:fill-yellow-800" />
-					</PillButton>
-				</Link>
+				<div className="bg-neutral-200 dark:bg-neutral-900 sticky top-0">
+					<Link href={pathAbove(asPath)}>
+						<PillButton>
+							<ArrowLongLeftIcon className="h-6 w-6 fill-orange-800 dark:fill-yellow-800" />
+						</PillButton>
+					</Link>
+				</div>
 			}
 			{children}
 		</div>
