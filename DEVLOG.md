@@ -1,7 +1,10 @@
 ## 2023-05-31
 
 * Changed the back button to be inside a sticky div located at the top of the website, so that the back button is always acessible.
-
+* Attempt at using `styleCanvas: false` in canvas-sketch settings together with
+  `max-w-xl` to control the width of some of the sketches in larger screens,
+  where the canvas would take the whole height of the screen, effectively
+  hiding the buttons and text below.
 
 ## 2023-05-27
 
