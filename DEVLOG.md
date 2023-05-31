@@ -1,7 +1,7 @@
 ## 2023-05-31
 
 * Changed the back button to be inside a sticky div located at the top of the website, so that the back button is always acessible.
-
+* Update Download button to look different from the "Regenerate" button.
 
 ## 2023-05-27
 
