@@ -1,3 +1,7 @@
+## 2023-06-06
+
+* Put buttons side by side in sketch 1 and 3
+
 ## 2023-05-31
 
 * Changed the back button to be inside a sticky div located at the top of the website, so that the back button is always acessible.
