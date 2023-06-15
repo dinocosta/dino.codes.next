@@ -1,3 +1,11 @@
+## 2023-06-15
+
+* Updated sketch 3 so that the canva's width and height are a bit more responsive
+    * For this to happen the `styleCanvas` option for [canvas-sketch](https://github.com/mattdesl/canvas-sketch/blob/master/docs/api.md#size-settings) needs to 
+      be set to `false` so that `canvas-sketch` does not try to style the canvas itself and we can have control over that.
+    * This functionality currently relies only on the window's `innerWidth` attribute but we will later update it to also use the window's `innerHeight` so that we 
+      do not end up increasing the width so much that it takes too much vertical space.
+
 ## 2023-06-06
 
 * Put buttons side by side in sketch 1 and 3
