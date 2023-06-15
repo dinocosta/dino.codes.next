@@ -1,5 +1,10 @@
 ## 2023-06-15
 
+* Extract canvas resize logic to lib so it can be reused everywhere else.
+* Update sketches 1 and 2 to also use canvas resizing logic.
+
+## 2023-06-14
+
 * Updated sketch 3 so that the canva's width and height are a bit more responsive
     * For this to happen the `styleCanvas` option for [canvas-sketch](https://github.com/mattdesl/canvas-sketch/blob/master/docs/api.md#size-settings) needs to 
       be set to `false` so that `canvas-sketch` does not try to style the canvas itself and we can have control over that.
