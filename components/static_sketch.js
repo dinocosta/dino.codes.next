@@ -18,7 +18,7 @@ export default function StaticSketch({ sketch, fileName }) {
 
 	useEffect(() => {
 		canvasSketch(sketch, { ...settings, canvas: ref.current })
-	}, [ref])
+	}, [sketch, ref])
 
 	// Whenever the browser's window is resized the canvas' width and height style must be updated
 	// so it does not end up taking too much vertical or horizontal space, which can be an issue in wider screens.
