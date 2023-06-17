@@ -1,3 +1,7 @@
+## 2023-06-17
+
+* Update the canvas resize logic to also take into consideration the window's innerHeight.
+
 ## 2023-06-15
 
 * Extract canvas resize logic to lib so it can be reused everywhere else.
