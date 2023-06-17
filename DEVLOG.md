@@ -1,6 +1,7 @@
 ## 2023-06-17
 
 * Update the canvas resize logic to also take into consideration the window's innerHeight.
+* Update resize logic to simply set the canvas' width and height to 75% of the window's height or width, whichever is smaller.
 
 ## 2023-06-15
 
