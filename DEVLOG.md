@@ -2,6 +2,7 @@
 
 * Update the canvas resize logic to also take into consideration the window's innerHeight.
 * Update resize logic to simply set the canvas' width and height to 75% of the window's height or width, whichever is smaller.
+* Create `StaticSketch` component to make it easier to create new sketches.
 
 ## 2023-06-15
 
