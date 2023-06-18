@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Script from 'next/script'
 import Link from '@/components/link'
 import { ArrowLongLeftIcon } from '@heroicons/react/24/solid'
 import { useRouter } from 'next/router'
@@ -30,6 +31,19 @@ export default function Layout({ children }) {
 		<div
 			className={`container overflow-visible mx-auto px-4 font-light ${font.className}`}
 		>
+			<Script strategy='afterInteractive' src='https://www.googletagmanager.com/gtag/js?id=G-LF9R8Y4KG2' />
+			<Script id='google-analytics' strategy='afterInteractive' dangerouslySetInnerHTML={{
+				__html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-LF9R8Y4KG2', {
+            page_path: window.location.pathname,
+          });
+        `,
+			}}
+			/>
+
 			<Head>
 				<title>dino.codes</title>
 				<link rel="shortcut icon" href="/favicon.ico" />
@@ -40,6 +54,7 @@ export default function Layout({ children }) {
 				<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
 				<meta name="msapplication-TileColor" content="#da532c" />
 				<meta name="theme-color" content="#ffffff" />
+
 			</Head>
 			{asPath != '/' &&
 				<div className="bg-neutral-200 dark:bg-neutral-900 sticky top-0">

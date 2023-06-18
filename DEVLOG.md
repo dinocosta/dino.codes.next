@@ -1,3 +1,7 @@
+## 2023-06-18
+
+* Add Google Analytics.
+
 ## 2023-06-17
 
 * Update the canvas resize logic to also take into consideration the window's innerHeight.
