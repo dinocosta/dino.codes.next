@@ -1,5 +1,6 @@
-import Layout from '@/components/layout'
+import Head from 'next/head'
 import dynamic from 'next/dynamic'
+import Layout from '@/components/layout'
 import { getSketchesData } from '@/lib/sketches'
 
 export async function getStaticPaths() {
@@ -34,6 +35,7 @@ export default function Sketch({ sketchId }) {
 
   return (
     <Layout>
+			<Head><title>[dino.codes] Sketch {sketchId}</title></Head>
       <div>
         <Sketch />
       </div>
