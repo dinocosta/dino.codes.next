@@ -18,4 +18,12 @@ body {
 	/* Dark Mode */
 	@apply dark:bg-neutral-900;
 	@apply dark:text-neutral-200;
+
+	/* Use weight 400 for the text */
+	@apply font-normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	/* Use weight 700 for the headers */
+	@apply font-bold;
 }

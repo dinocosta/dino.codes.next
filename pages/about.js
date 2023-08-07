@@ -65,7 +65,7 @@ export default function About() {
         experience!
       </p>
 
-      <h2 className="mt-4 block text-xl font-medium">Where to find me</h2>
+      <h2 className="mt-4 block text-xl">Where to find me</h2>
       <p className="py-2">
         Feel free to find me in any of these platforms!
         <ul className="ml-5 list-disc">

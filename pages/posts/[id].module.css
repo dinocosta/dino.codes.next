@@ -13,12 +13,10 @@
 }
 
 .post h1 {
-	@apply font-normal;
 	@apply text-4xl;
 }
 
 .post h2 {
-	@apply font-normal;
 	@apply text-2xl;
 }
 

@@ -3,10 +3,10 @@ import Script from 'next/script'
 import Link from '@/components/link'
 import { ArrowLongLeftIcon } from '@heroicons/react/24/solid'
 import { useRouter } from 'next/router'
-import { Sora as Font } from 'next/font/google'
+import { IBM_Plex_Sans as Font } from 'next/font/google'
 import PillButton from '@/components/pill_button'
 
-const font = Font({ subsets: ['latin'] })
+const font = Font({ subsets: ['latin'], weight: ['400', '700'] })
 
 // Takes a string which is the path of the curren page and returns the path of the page above, for
 // example, `pathAbove('/posts/new-post')` will return `/posts`.
@@ -29,7 +29,7 @@ export default function Layout({ children }) {
 
 	return (
 		<div
-			className={`container overflow-visible mx-auto px-4 font-light ${font.className}`}
+			className={`container max-w-3xl overflow-visible mx-auto px-4 ${font.className}`}
 		>
 			<Script strategy='afterInteractive' src='https://www.googletagmanager.com/gtag/js?id=G-LF9R8Y4KG2' />
 			<Script id='google-analytics' strategy='afterInteractive' dangerouslySetInnerHTML={{
