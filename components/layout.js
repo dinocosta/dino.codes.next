@@ -5,6 +5,7 @@ import { ArrowLongLeftIcon } from '@heroicons/react/24/solid'
 import { useRouter } from 'next/router'
 import { IBM_Plex_Sans as Font } from 'next/font/google'
 import PillButton from '@/components/pill_button'
+import { Analytics } from '@vercel/analytics/react'
 
 const font = Font({ subsets: ['latin'], weight: ['400', '700'] })
 
@@ -65,6 +66,7 @@ export default function Layout({ children }) {
 					</Link>
 				</div>
 			}
+			<Analytics />
 			{children}
 		</div>
 	)
