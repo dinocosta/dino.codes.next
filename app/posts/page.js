@@ -4,6 +4,7 @@ import { getPostsData } from '@/lib/posts'
 
 export async function getData() {
 	const postsData = getPostsData()
+	console.log(postsData)
 
 	return postsData
 }
