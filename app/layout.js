@@ -4,7 +4,7 @@ import Script from 'next/script'
 import { Analytics } from '@vercel/analytics/react'
 import { ArrowLongLeftIcon } from '@heroicons/react/24/solid'
 import { Metadata } from 'next';
-import { Open_Sans, Roboto } from 'next/font/google'
+import { Roboto } from 'next/font/google'
 import '../styles/globals.css'
 
 const font = Roboto({ subsets: ['latin'], weight: ['400', '700'] })

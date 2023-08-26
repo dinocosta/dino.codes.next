@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import Link from '@/components/link'
-import Layout from '@/components/layout'
 import PageTitle from '@/components/page_title'
 
 const links = [
@@ -15,7 +14,7 @@ const links = [
 
 export default function About() {
   return (
-    <Layout>
+		<div>
       <PageTitle title="About" />
 
       <div className="mx-auto relative h-80 md:h-96 lg:h-112 max-w-lg">
@@ -78,6 +77,6 @@ export default function About() {
           ))}
         </ul>
       </p>
-    </Layout>
+		</div>
   )
 }
