@@ -5,6 +5,7 @@ import { getPostsData } from '@/lib/posts'
 
 export async function getStaticProps() {
 	const postsData = getPostsData()
+		.sort(function(a, b) { return new Date(b.date) - new Date(a.date) })
 
 	return {
 		props: { postsData },
