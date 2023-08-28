@@ -1,8 +1,9 @@
 import Link from '@/components/link'
 import PillButton from '@/components/pill_button'
+import NavBar from '@/components/navbar'
 import Script from 'next/script'
 import { Analytics } from '@vercel/analytics/react'
-import { ArrowLongLeftIcon } from '@heroicons/react/24/solid'
+import { CpuChipIcon, Bars3Icon } from '@heroicons/react/24/solid'
 import { Metadata } from 'next';
 import { Roboto } from 'next/font/google'
 import '../styles/globals.css'
@@ -17,6 +18,9 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
 			<body>
+				
+				<NavBar />
+
 				<div
 					className={`container max-w-3xl overflow-visible mx-auto px-4 ${font.className}`}
 					>

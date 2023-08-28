@@ -3,10 +3,8 @@ import PageTitle from '@/components/page_title'
 import { getPostsData } from '@/lib/posts'
 
 export async function getData() {
-	const postsData = getPostsData()
-	console.log(postsData)
-
-	return postsData
+	return getPostsData()
+		.sort(function(a, b) { return new Date(b.date) - new Date(a.date) })
 }
 
 export default async function Posts() {
