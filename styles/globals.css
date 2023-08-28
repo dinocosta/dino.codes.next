@@ -13,10 +13,10 @@
 body {
 	/* Light Mode */
 	@apply bg-neutral-100;
-	@apply text-neutral-900;
+	@apply text-neutral-800;
 
 	/* Dark Mode */
-	@apply dark:bg-neutral-900;
+	@apply dark:bg-neutral-800;
 	@apply dark:text-neutral-200;
 
 	/* Use weight 400 for the text */

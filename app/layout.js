@@ -18,11 +18,9 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
 			<body>
-				
 				<NavBar />
-
 				<div
-					className={`container max-w-3xl overflow-visible mx-auto px-4 ${font.className}`}
+					className={`px-4 overflow-visible ${font.className}`}
 					>
 					<Script strategy='afterInteractive' src='https://www.googletagmanager.com/gtag/js?id=G-LF9R8Y4KG2' />
 					<Script id='google-analytics' strategy='afterInteractive' dangerouslySetInnerHTML={{
@@ -38,7 +36,9 @@ page_path: window.location.pathname,
 					/>
 
 					<Analytics />
-					{children}
+					<div class="max-w-3xl mx-auto">
+						{children}
+					</div>
 				</div>
 			</body>
 		</html>

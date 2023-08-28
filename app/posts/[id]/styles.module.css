@@ -8,8 +8,8 @@
 
 
 .post h1, .post h2, .post h3 {
-	@apply mt-10;
-	@apply mb-4;
+	@apply mt-4;
+	@apply mb-2;
 }
 
 .post h1 {
@@ -22,7 +22,7 @@
 
 .post ul {
 	@apply list-disc;
-	@apply ml-5;
+	@apply ml-4;
 	@apply my-4;
 }
 

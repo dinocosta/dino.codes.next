@@ -15,7 +15,7 @@ export default function NavBar() {
 
 	return (
 		<nav class="bg-gray-200 dark:bg-neutral-900 px-4 py-4 mb-2">
-			<div class="mx-auto container">
+			<div class="mx-auto max-w-3xl">
 				<div class="flex justify-between">
 					<Link href="/">
 						<div class={`w-6 h-6 rounded-full bg-${highlightColor} dark:bg-${darkHighlightColor}`} />

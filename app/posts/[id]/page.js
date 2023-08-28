@@ -1,6 +1,7 @@
 import PageTitle from '@/components/page_title'
 import { getPostsData, getPost } from '@/lib/posts'
 import styles from './styles.module.css'
+import { subtitleColor } from '@/lib/constants'
 
 // Highlight.js setup - this sets up the syntax highlighting for code blocks in the blogposts.
 // It is only importing configs for Python and Elixir as those are the only two languages
@@ -41,7 +42,7 @@ export default async function Post({ params }) {
 	return (
 		<div>
 			<PageTitle title={title} />
-			<small className="block mb-2 text-neutral-400">{date}</small>
+			<small className={`block text-${subtitleColor}`}>{date}</small>
 
 			<div
 				className={styles.post}

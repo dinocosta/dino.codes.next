@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import PageTitle from '@/components/page_title'
 import { getPostsData } from '@/lib/posts'
+import { subtitleColor } from '@/lib/constants'
 
 export async function getData() {
 	return getPostsData()
@@ -21,10 +22,10 @@ export default async function Posts() {
 					href={`/posts/${id}`}
 					>
 					<h2 className="mb-2 text-xl">{title}</h2>
-					<small className="mb-1 block text-neutral-500">
+					<small className={`mb-1 block text-${subtitleColor}`}>
 						{description}
 					</small>
-					<small className="block text-neutral-500">{date}</small>
+					<small className={`block text-${subtitleColor}`}>{date}</small>
 				</Link>
 			))}
 		</div>
