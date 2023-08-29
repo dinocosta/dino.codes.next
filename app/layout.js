@@ -1,12 +1,12 @@
+import '../styles/globals.css'
 import Link from '@/components/link'
-import PillButton from '@/components/pill_button'
 import NavBar from '@/components/navbar'
+import PillButton from '@/components/pill_button'
 import Script from 'next/script'
 import { Analytics } from '@vercel/analytics/react'
 import { CpuChipIcon, Bars3Icon } from '@heroicons/react/24/solid'
 import { Metadata } from 'next';
 import { Roboto } from 'next/font/google'
-import '../styles/globals.css'
 
 const font = Roboto({ subsets: ['latin'], weight: ['400', '700'] })
 

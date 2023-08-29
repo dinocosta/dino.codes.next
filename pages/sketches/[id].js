@@ -35,8 +35,8 @@ export default function Sketch({ sketchId }) {
 
   return (
     <Layout>
-			<Head><title>[dino.codes] Sketch {sketchId}</title></Head>
-      <div>
+			<Head><title>{`[dino.codes] Sketch ${sketchId}`}</title></Head>
+      <div class="mt-8">
         <Sketch />
       </div>
     </Layout>
