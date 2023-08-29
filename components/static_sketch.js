@@ -7,7 +7,7 @@ import SketchDownload from '@/components/sketch_download'
 const settings = { dimensions: [2048, 2048], styleCanvas: false }
 
 function getCanvasDimensions() {
-	const dimension = 0.75 * Math.min(window.innerWidth, window.innerHeight)
+	const dimension = 0.55 * Math.min(window.innerWidth, window.innerHeight)
 
 	return { width: dimension, height: dimension }
 }
