@@ -65,18 +65,16 @@ export default function About() {
       </p>
 
       <h2 className="mt-4 block text-xl">Where to find me</h2>
-      <p className="py-2">
-        Feel free to find me in any of these platforms!
-        <ul className="ml-5 list-disc">
-          {links.map(({ href, text }) => (
-            <li key={`link-text`}>
-              <Link href={href}>
-                {text}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </p>
+      <p className="py-2">Feel free to find me in any of these platforms!</p>
+			<ul className="ml-5 list-disc">
+				{links.map(({ href, text }) => (
+					<li key={`link-text`}>
+						<Link href={href}>
+							{text}
+						</Link>
+					</li>
+				))}
+			</ul>
 		</div>
   )
 }
