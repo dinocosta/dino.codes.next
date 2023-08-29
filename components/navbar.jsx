@@ -48,9 +48,9 @@ export default function NavBar() {
 
 				{/* Mobile Menu */}
 				<div class="mobile-menu hidden md:hidden mt-2">
-					<a href="#" class={`block py-2 hover:text-${highlightColor} hover:dark:text-${darkHighlightColor} transition-colors`}>Posts</a>
-					<a href="#" class={`block py-2 hover:text-${highlightColor} hover:dark:text-${darkHighlightColor} transition-colors`}>Sketches</a>
-					<a href="#" class={`block py-2 hover:text-${highlightColor} hover:dark:text-${darkHighlightColor} transition-colors`}>About</a>
+					<a href="/posts" class={`block py-2 hover:text-${highlightColor} hover:dark:text-${darkHighlightColor} transition-colors`}>Posts</a>
+					<a href="/sketches" class={`block py-2 hover:text-${highlightColor} hover:dark:text-${darkHighlightColor} transition-colors`}>Sketches</a>
+					<a href="/about" class={`block py-2 hover:text-${highlightColor} hover:dark:text-${darkHighlightColor} transition-colors`}>About</a>
 				</div>
 			</div>
 		</nav>
