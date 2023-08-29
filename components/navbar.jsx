@@ -1,16 +1,26 @@
 'use client'
 
-import { highlightColor, darkHighlightColor, textColor, darkTextColor } from '@/lib/constants'
 import Link from '@/components/link'
-import { CpuChipIcon, Bars3Icon } from '@heroicons/react/24/solid'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid'
+import { highlightColor, darkHighlightColor, textColor, darkTextColor } from '@/lib/constants'
+import { useState } from 'react'
+
+const ToggleButton = ({ isOpen }) => {
+	return isOpen ? <XMarkIcon className={`h-6 w-6 fill-${textColor} dark:${darkTextColor}`} /> : <Bars3Icon className={`h-6 w-6 fill-${textColor} dark:${darkTextColor}`} />
+}
 
 export default function NavBar() {
-	// Toggles the 'hidden' class from the mobile menu.
+	const [isOpen, setIsOpen] = useState(false)
+
+	// Toggles the 'hidden' class from the mobile menu and updates
+	// the `isOpen` state so that the menu button is updated accordingly.
 	const toggleMenu = () => {
 		document
 		.querySelector('.mobile-menu')
 		.classList
 		.toggle('hidden')
+
+		setIsOpen(!isOpen)
 	}
 
 	return (
@@ -31,7 +41,7 @@ export default function NavBar() {
 					{/* Mobile Button */}
 					<div class="md:hidden flex items-center">
 						<button onClick={toggleMenu} class="mobile-menu-button">
-							<Bars3Icon className={`h-6 w-6 fill-${textColor} dark:${darkTextColor}`} />
+							<ToggleButton isOpen={isOpen} />
 						</button>
 					</div>
 				</div>
