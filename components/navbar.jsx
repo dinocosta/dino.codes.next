@@ -33,9 +33,9 @@ export default function NavBar() {
 
 					{/* Primary Navigation */}
 					<div class="flex items-center space-x-4 hidden md:flex">
-						<a href="/posts"		class={`hover:text-${highlightColor} hover:dark:text-${darkHighlightColor} transition-colors`}>Posts</a>
-						<a href="/sketches" class={`hover:text-${highlightColor} hover:dark:text-${darkHighlightColor} transition-colors`}>Sketches</a>
-						<a href="/about"		class={`hover:text-${highlightColor} hover:dark:text-${darkHighlightColor} transition-colors`}>About</a>
+						<a href="/posts"		className={`hover:text-${highlightColor} hover:dark:text-${darkHighlightColor} transition-colors`}>Posts</a>
+						<a href="/sketches" className={`hover:text-${highlightColor} hover:dark:text-${darkHighlightColor} transition-colors`}>Sketches</a>
+						<a href="/about"		className={`hover:text-${highlightColor} hover:dark:text-${darkHighlightColor} transition-colors`}>About</a>
 					</div>
 
 					{/* Mobile Button */}
@@ -48,9 +48,9 @@ export default function NavBar() {
 
 				{/* Mobile Menu */}
 				<div class="mobile-menu hidden md:hidden mt-2">
-					<a href="/posts" class={`block py-2 hover:text-${highlightColor} hover:dark:text-${darkHighlightColor} transition-colors`}>Posts</a>
-					<a href="/sketches" class={`block py-2 hover:text-${highlightColor} hover:dark:text-${darkHighlightColor} transition-colors`}>Sketches</a>
-					<a href="/about" class={`block py-2 hover:text-${highlightColor} hover:dark:text-${darkHighlightColor} transition-colors`}>About</a>
+					<a href="/posts" className={`block py-2 hover:text-${highlightColor} hover:dark:text-${darkHighlightColor} transition-colors`}>Posts</a>
+					<a href="/sketches" className={`block py-2 hover:text-${highlightColor} hover:dark:text-${darkHighlightColor} transition-colors`}>Sketches</a>
+					<a href="/about" className={`block py-2 hover:text-${highlightColor} hover:dark:text-${darkHighlightColor} transition-colors`}>About</a>
 				</div>
 			</div>
 		</nav>
