@@ -1,17 +1,8 @@
 import PageTitle from '@/components/page_title'
-import { getPostsData, getPost } from '@/lib/posts'
+import CodeHighlighter from '@/components/code_highlighter'
 import styles from './styles.module.css'
+import { getPostsData, getPost } from '@/lib/posts'
 import { subtitleColor } from '@/lib/constants'
-
-// Highlight.js setup - this sets up the syntax highlighting for code blocks in the blogposts.
-// It is only importing configs for Python and Elixir as those are the only two languages
-// present in the blogposts for now. Add other languages as needed.
-import hljs from 'highlight.js/lib/core'
-import python from 'highlight.js/lib/languages/python'
-import elixir from 'highlight.js/lib/languages/elixir'
-import 'highlight.js/styles/base16/grayscale-light.css'
-hljs.registerLanguage('python', python)
-hljs.registerLanguage('elixir', elixir)
 
 
 export async function generateStaticParams() {
@@ -44,6 +35,7 @@ export default async function Post({ params }) {
 			<PageTitle title={title} />
 			<small className={`block text-${subtitleColor}`}>{date}</small>
 
+			<CodeHighlighter />
 			<div
 				className={styles.post}
 				dangerouslySetInnerHTML={{ __html: content }}

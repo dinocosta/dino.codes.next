@@ -56,4 +56,7 @@
 
 /* Add some margint to code blocks and give them round corners */
 .post pre { @apply my-8; }
-.post pre code { @apply rounded-md; }
+.post pre code { 
+	@apply rounded-md; 
+	@apply font-mono;
+}

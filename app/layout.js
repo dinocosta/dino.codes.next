@@ -20,7 +20,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
 	return (
-		<html lang="en" className={`${inter.variable} font-sans`}>
+		<html lang="en" className={`${robotoMono.variable} ${inter.variable} font-sans`}>
 			<body>
 				<NavBar />
 				<div
