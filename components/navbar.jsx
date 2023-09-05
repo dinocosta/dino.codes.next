@@ -24,30 +24,30 @@ export default function NavBar() {
 	}
 
 	return (
-		<nav class="bg-gray-200 dark:bg-neutral-900 px-4 py-4 mb-2">
-			<div class="mx-auto max-w-3xl">
-				<div class="flex justify-between">
+		<nav className="bg-gray-200 dark:bg-neutral-900 px-4 py-4 mb-2">
+			<div className="mx-auto max-w-3xl">
+				<div className="flex justify-between">
 					<Link href="/">
-						<div class={`w-6 h-6 rounded-full bg-${highlightColor} dark:bg-${darkHighlightColor}`} />
+						<div className={`w-6 h-6 rounded-full bg-${highlightColor} dark:bg-${darkHighlightColor}`} />
 					</Link>
 
 					{/* Primary Navigation */}
-					<div class="flex items-center space-x-4 hidden md:flex">
+					<div className="flex items-center space-x-4 hidden md:flex">
 						<a href="/posts"		className={`hover:text-${highlightColor} hover:dark:text-${darkHighlightColor} transition-colors`}>Posts</a>
 						<a href="/sketches" className={`hover:text-${highlightColor} hover:dark:text-${darkHighlightColor} transition-colors`}>Sketches</a>
 						<a href="/about"		className={`hover:text-${highlightColor} hover:dark:text-${darkHighlightColor} transition-colors`}>About</a>
 					</div>
 
 					{/* Mobile Button */}
-					<div class="md:hidden flex items-center">
-						<button onClick={toggleMenu} class="mobile-menu-button">
+					<div className="md:hidden flex items-center">
+						<button onClick={toggleMenu} className="mobile-menu-button">
 							<ToggleButton isOpen={isOpen} />
 						</button>
 					</div>
 				</div>
 
 				{/* Mobile Menu */}
-				<div class="mobile-menu hidden md:hidden mt-2">
+				<div className="mobile-menu hidden md:hidden mt-2">
 					<a href="/posts" className={`block py-2 hover:text-${highlightColor} hover:dark:text-${darkHighlightColor} transition-colors`}>Posts</a>
 					<a href="/sketches" className={`block py-2 hover:text-${highlightColor} hover:dark:text-${darkHighlightColor} transition-colors`}>Sketches</a>
 					<a href="/about" className={`block py-2 hover:text-${highlightColor} hover:dark:text-${darkHighlightColor} transition-colors`}>About</a>
