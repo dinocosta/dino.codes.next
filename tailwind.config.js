@@ -14,6 +14,10 @@ module.exports = {
 					'to': { transform: 'translateY(0px)', opacity: 1 },
 				},
 			},
+			fontFamily: {
+				sans: ['var(--font-inter)'],
+				mono: ['var(--font-roboto-mono)']
+			}
 		},
 	},
 	plugins: [],
