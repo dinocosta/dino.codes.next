@@ -24,7 +24,7 @@ page_path: window.location.pathname,
 				/>
 
 				<Analytics />
-				<div class="max-w-3xl mx-auto">
+				<div className="max-w-3xl mx-auto">
 					{children}
 				</div>
 			</div>
