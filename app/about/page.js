@@ -20,7 +20,7 @@ export default function About() {
       <div className="mx-auto relative h-80 md:h-96 lg:h-112 max-w-lg">
         <Image
           fill
-          src="/about.jpg"
+          src="/dino.jpg"
 					alt="dino"
           className="rounded-md object-cover"
         />
