@@ -8,8 +8,8 @@ const links = [
     href: 'https://www.goodreads.com/user/show/61047559-jo-o-costa',
     text: 'Goodreads',
   },
-  { href: 'https://twitter.com/joaofcosta_', text: 'Twitter' },
-  { href: 'https://github.com/joaofcosta', text: 'Github' },
+  { href: 'https://twitter.com/dinocosta_', text: 'Twitter' },
+  { href: 'https://github.com/dinocosta', text: 'Github' },
 ]
 
 export default function About() {
