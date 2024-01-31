@@ -21,10 +21,10 @@ export default async function Posts() {
           href={`/posts/${id}`}
         >
           <h2 className="mb-2 text-xl">{title}</h2>
-          <small className='mb-1 block text-tx-2-light'>
+          <small className='mb-1 block text-secondary-light'>
             {description}
           </small>
-          <small className='block text-tx-2-light'>{date}</small>
+          <small className='block text-secondary-light'>{date}</small>
         </Link>
       ))}
     </div>

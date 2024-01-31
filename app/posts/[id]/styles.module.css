@@ -34,8 +34,8 @@
 }
 
 .post a {
-    @apply text-or-light;
-    @apply dark:text-ye-light;
+    @apply text-primary-light;
+    @apply dark:text-primary-dark;
 }
 
 .post img {
@@ -49,9 +49,9 @@
  * Using `:not(pre)` guarantees we only affect `<code>` tags that are not in code blocks. */
 .post :not(pre)>code {
     @apply rounded-md;
-    @apply bg-bg-2-light;
-    @apply dark:bg-bg-2-dark;
-    @apply dark:text-tx-2-dark;
+    @apply bg-secondary-dark;
+    @apply dark:bg-secondary-light;
+    @apply dark:text-text-dark;
     @apply px-1;
     @apply py-0.5;
 }
@@ -63,5 +63,6 @@
 
 .post pre code {
     @apply rounded-md;
+    @apply border-2;
     @apply font-mono;
 }

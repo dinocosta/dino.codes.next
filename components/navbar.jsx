@@ -5,7 +5,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid'
 import { useState } from 'react'
 
 const ToggleButton = ({ isOpen }) => {
-  return isOpen ? <XMarkIcon className='h-6 w-6 fill-tx-light dark:tx-dark' /> : <Bars3Icon className='h-6 w-6 fill-tx-light dark:tx-dark' />
+  return isOpen ? <XMarkIcon className='h-6 w-6 fill-text-light dark:text-dark' /> : <Bars3Icon className='h-6 w-6 fill-text-light dark:text-dark' />
 }
 
 export default function NavBar() {
@@ -23,18 +23,18 @@ export default function NavBar() {
   }
 
   return (
-    <nav className="bg-bg-2-light dark:bg-bg-2-dark px-4 py-4 mb-2">
+    <nav className="px-4 py-4 mb-2">
       <div className="mx-auto max-w-3xl">
         <div className="flex justify-between">
           <Link href="/">
-            <div className='w-6 h-6 rounded-full bg-or-light dark:bg-ye-light' />
+            <div className='w-6 h-6 rounded-full bg-primary-light dark:bg-primary-dark' />
           </Link>
 
           {/* Primary Navigation */}
           <div className="flex items-center space-x-4 hidden md:flex">
-            <a href="/posts" className='hover:text-or-light hover:dark:text-ye-light transition-colors'>Posts</a>
-            <a href="/sketches" className='hover:text-or-light hover:dark:text-ye-light transition-colors'>Sketches</a>
-            <a href="/about" className='hover:text-or-light hover:dark:text-ye-light transition-colors'>About</a>
+            <a href="/posts" className='hover:text-primary-light hover:dark:text-primary-dark transition-colors'>Posts</a>
+            <a href="/sketches" className='hover:text-primary-light hover:dark:text-primary-dark transition-colors'>Sketches</a>
+            <a href="/about" className='hover:text-primary-light hover:dark:text-primary-dark transition-colors'>About</a>
           </div>
 
           {/* Mobile Button */}
@@ -47,9 +47,9 @@ export default function NavBar() {
 
         {/* Mobile Menu */}
         <div className="mobile-menu hidden md:hidden mt-2">
-          <a href="/posts" className={`block py-2 hover:text-or-light hover:dark:text-ye-light transition-colors`}>Posts</a>
-          <a href="/sketches" className={`block py-2 hover:text-or-light hover:dark:text-ye-light transition-colors`}>Sketches</a>
-          <a href="/about" className={`block py-2 hover:text-or-light hover:dark:text-ye-light transition-colors`}>About</a>
+          <a href="/posts" className={`block py-2 hover:text-primary-light hover:dark:text-primary-dark transition-colors`}>Posts</a>
+          <a href="/sketches" className={`block py-2 hover:text-primary-light hover:dark:text-primary-dark transition-colors`}>Sketches</a>
+          <a href="/about" className={`block py-2 hover:text-primary-light hover:dark:text-primary-dark transition-colors`}>About</a>
         </div>
       </div>
     </nav>

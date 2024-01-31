@@ -15,7 +15,7 @@ export default function Home() {
           <div key={text} className={animation}>
             <Link
               href={href}
-              className="text-2xl font-bold transition-colors hover:text-or-light hover:dark:text-ye-light">
+              className="text-2xl font-bold transition-colors hover:text-primary-light hover:dark:text-primary-dark">
               {text}
             </Link>
           </div>

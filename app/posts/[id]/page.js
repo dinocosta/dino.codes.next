@@ -32,7 +32,7 @@ export default async function Post({ params }) {
   return (
     <div>
       <PageTitle title={title} />
-      <small className='block text-tx-2-light'>{date}</small>
+      <small className='block text-secondary-light'>{date}</small>
 
       <CodeHighlighter />
       <div

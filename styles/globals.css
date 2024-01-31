@@ -12,12 +12,12 @@
 
 body {
     /* Light Mode */
-    @apply bg-bg-light;
-    @apply text-tx-light;
+    @apply bg-background-light;
+    @apply text-text-light;
 
     /* Dark Mode */
-    @apply dark:bg-bg-dark;
-    @apply dark:text-tx-dark;
+    @apply dark:bg-background-dark;
+    @apply dark:text-text-dark;
 
     /* Use weight 400 for the text */
     @apply font-normal;
