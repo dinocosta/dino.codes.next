@@ -1,62 +1,67 @@
 /* I'm not entirely sure why, maybe because we're using Tailwind and Tailwind disable all default styles but, when
 * converting Markdown to HTML and trying to render it there were no visible differences between the tags. For example, a
-* `<ul>` tag would not render the bullet points. 
+* `<ul>` tag would not render the bullet points.
 * As such, this component-specific CSS file serves the purpose of styling
-* the elements in the posts as we can't set `className` for those tags in the Markdown file. 
+* the elements in the posts as we can't set `className` for those tags in the Markdown file.
 * Also, we can not simply use `ul`, we have to do something like `.post > ul` otherwise we get an error because the `ul`
 * selector is not pure, not 100% sure what this means but it's worth pointing out why this is done this way. */
 
 
-.post h1, .post h2, .post h3 {
-	@apply mt-4;
-	@apply mb-2;
+.post h1,
+.post h2,
+.post h3 {
+    @apply mt-4;
+    @apply mb-2;
 }
 
 .post h1 {
-	@apply text-4xl;
+    @apply text-4xl;
 }
 
 .post h2 {
-	@apply text-2xl;
+    @apply text-2xl;
 }
 
 .post ul {
-	@apply list-disc;
-	@apply ml-4;
-	@apply my-4;
+    @apply list-disc;
+    @apply ml-4;
+    @apply my-4;
 }
 
-.post p { 
-	@apply my-2; 
-	@apply text-base/7;
+.post p {
+    @apply my-2;
+    @apply text-base/7;
 }
 
 .post a {
-	@apply text-orange-500;
-	@apply dark:text-yellow-300;
+    @apply text-or-light;
+    @apply dark:text-ye-light;
 }
 
 .post img {
-	@apply mx-auto;
-	@apply my-8;
-	@apply rounded-md;
+    @apply mx-auto;
+    @apply my-8;
+    @apply rounded-md;
 }
 
 /* Since highlight.js does not highlight code in <code> inline tags, this adds a
- * little bit of style to them 
+ * little bit of style to them
  * Using `:not(pre)` guarantees we only affect `<code>` tags that are not in code blocks. */
-.post :not(pre) > code {
-	@apply rounded-md;
-	@apply bg-neutral-300;
-	@apply dark:bg-neutral-700;
-	@apply dark:text-neutral-200;
-	@apply px-1;
-	@apply py-0.5;
+.post :not(pre)>code {
+    @apply rounded-md;
+    @apply bg-bg-2-light;
+    @apply dark:bg-bg-2-dark;
+    @apply dark:text-tx-2-dark;
+    @apply px-1;
+    @apply py-0.5;
 }
 
 /* Add some margint to code blocks and give them round corners */
-.post pre { @apply my-8; }
-.post pre code { 
-	@apply rounded-md; 
-	@apply font-mono;
+.post pre {
+    @apply my-8;
+}
+
+.post pre code {
+    @apply rounded-md;
+    @apply font-mono;
 }

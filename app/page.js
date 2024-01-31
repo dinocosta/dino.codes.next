@@ -9,18 +9,18 @@ const links = [
 
 export default function Home() {
   return (
-			<div className="flex h-screen">
-				<div className="m-auto text-center">
-					{links.map(({ href, text, animation }) => (
-						<div key={text} className={animation}>
-							<Link
-								href={href}
-								className="text-2xl font-bold transition-colors hover:text-orange-500 hover:dark:text-yellow-300">
-								{text}
-							</Link>
-						</div>
-					))}
-				</div>
-			</div>
+    <div className="flex h-screen">
+      <div className="m-auto text-center">
+        {links.map(({ href, text, animation }) => (
+          <div key={text} className={animation}>
+            <Link
+              href={href}
+              className="text-2xl font-bold transition-colors hover:text-or-light hover:dark:text-ye-light">
+              {text}
+            </Link>
+          </div>
+        ))}
+      </div>
+    </div>
   )
 }

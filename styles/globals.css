@@ -5,25 +5,30 @@
 /* Fixes the screen height for Safari on iOS, without this the index page would
 * extend past Safari's URL bar */
 @supports (-webkit-touch-callout: none) {
-	.h-screen {
-		height: -webkit-fill-available;
-	}
+    .h-screen {
+        height: -webkit-fill-available;
+    }
 }
 
 body {
-	/* Light Mode */
-	@apply bg-neutral-100;
-	@apply text-neutral-800;
+    /* Light Mode */
+    @apply bg-bg-light;
+    @apply text-tx-light;
 
-	/* Dark Mode */
-	@apply dark:bg-neutral-800;
-	@apply dark:text-neutral-200;
+    /* Dark Mode */
+    @apply dark:bg-bg-dark;
+    @apply dark:text-tx-dark;
 
-	/* Use weight 400 for the text */
-	@apply font-normal;
+    /* Use weight 400 for the text */
+    @apply font-normal;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	/* Use weight 700 for the headers */
-	@apply font-semibold;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    /* Use weight 700 for the headers */
+    @apply font-semibold;
 }

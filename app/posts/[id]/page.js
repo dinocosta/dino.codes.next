@@ -1,45 +1,44 @@
-import PageTitle from '@/components/page_title'
 import CodeHighlighter from '@/components/code_highlighter'
+import PageTitle from '@/components/page_title'
+import { getPost, getPostsData } from '@/lib/posts'
 import styles from './styles.module.css'
-import { getPostsData, getPost } from '@/lib/posts'
-import { subtitleColor } from '@/lib/constants'
 
 
 export async function generateStaticParams() {
   const postsData = getPostsData()
 
-	const data = postsData.map(({ id }) => {
-		id: id
-	})
+  const data = postsData.map(({ id }) => {
+    id: id
+  })
 
-	return data
+  return data
 }
 
 export async function getData(id) {
-	const { content, date, title, description } = await getPost(id)
+  const { content, date, title, description } = await getPost(id)
 
-	return {
-		content: content,
-		date: date,
-		title: title,
-		description: description,
-	}
+  return {
+    content: content,
+    date: date,
+    title: title,
+    description: description,
+  }
 }
 
 export default async function Post({ params }) {
-	const { id } = params
-	const { content, date, title } = await getData(id)
+  const { id } = params
+  const { content, date, title } = await getData(id)
 
-	return (
-		<div>
-			<PageTitle title={title} />
-			<small className={`block text-${subtitleColor}`}>{date}</small>
+  return (
+    <div>
+      <PageTitle title={title} />
+      <small className='block text-tx-2-light'>{date}</small>
 
-			<CodeHighlighter />
-			<div
-				className={styles.post}
-				dangerouslySetInnerHTML={{ __html: content }}
-			></div>
-		</div>
-	)
+      <CodeHighlighter />
+      <div
+        className={styles.post}
+        dangerouslySetInnerHTML={{ __html: content }}
+      ></div>
+    </div >
+  )
 }
