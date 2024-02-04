@@ -1,5 +1,7 @@
 export default function PageTitle({ title }) {
-  return <h1 className='mb-2 mt-4 block text-2xl text-primary-light dark:text-primary-dark'>
-    {title}
-  </h1>
+  return (
+    <h1 className="text-text-light dark:text-text-dark mb-1 block text-2xl">
+      {title}
+    </h1>
+  )
 }

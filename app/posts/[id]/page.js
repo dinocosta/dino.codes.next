@@ -1,8 +1,7 @@
 import CodeHighlighter from '@/components/code_highlighter'
 import PageTitle from '@/components/page_title'
-import { getPost, getPostsData } from '@/lib/posts'
+import { getPost, getPostsData, formatDate } from '@/lib/posts'
 import styles from './styles.module.css'
-
 
 export async function generateStaticParams() {
   const postsData = getPostsData()
@@ -32,13 +31,15 @@ export default async function Post({ params }) {
   return (
     <div>
       <PageTitle title={title} />
-      <small className='block text-secondary-light'>{date}</small>
+      <small className="text-muted-light dark:text-muted-dark mb-6 block">
+        {formatDate(date)}
+      </small>
 
       <CodeHighlighter />
       <div
         className={styles.post}
         dangerouslySetInnerHTML={{ __html: content }}
       ></div>
-    </div >
+    </div>
   )
 }

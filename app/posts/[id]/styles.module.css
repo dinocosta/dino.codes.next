@@ -6,63 +6,69 @@
 * Also, we can not simply use `ul`, we have to do something like `.post > ul` otherwise we get an error because the `ul`
 * selector is not pure, not 100% sure what this means but it's worth pointing out why this is done this way. */
 
-
 .post h1,
 .post h2,
 .post h3 {
-    @apply mt-4;
-    @apply mb-2;
+  @apply mt-6;
+  @apply mb-2;
 }
 
 .post h1 {
-    @apply text-4xl;
+  @apply text-xl;
+  @apply font-semibold;
 }
 
 .post h2 {
-    @apply text-2xl;
+  @apply text-lg;
+  @apply font-semibold;
 }
 
 .post ul {
-    @apply list-disc;
-    @apply ml-4;
-    @apply my-4;
+  @apply list-disc;
+  @apply ml-4;
+  @apply my-4;
 }
 
 .post p {
-    @apply my-2;
-    @apply text-base/7;
+  @apply my-2;
+  @apply text-sm;
 }
 
 .post a {
-    @apply text-primary-light;
-    @apply dark:text-primary-dark;
+  @apply underline;
+  @apply decoration-wavy;
+  @apply decoration-accent-light;
+  @apply dark:decoration-accent-dark;
+  @apply hover:text-accent-light;
+  @apply hover:dark:text-accent-dark;
 }
 
 .post img {
-    @apply mx-auto;
-    @apply my-8;
-    @apply rounded-md;
+  @apply mx-auto;
+  @apply my-8;
+  @apply rounded-md;
 }
 
 /* Since highlight.js does not highlight code in <code> inline tags, this adds a
  * little bit of style to them
  * Using `:not(pre)` guarantees we only affect `<code>` tags that are not in code blocks. */
-.post :not(pre)>code {
-    @apply rounded-md;
-    @apply bg-secondary-dark;
-    @apply dark:bg-secondary-light;
-    @apply dark:text-text-dark;
-    @apply px-1;
-    @apply py-0.5;
+.post :not(pre) > code {
+  @apply rounded-md;
+  @apply bg-muted-light;
+  @apply dark:bg-muted-dark;
+  @apply dark:text-text-dark;
+  @apply px-1;
+  @apply py-0.5;
 }
 
 /* Add some margint to code blocks and give them round corners */
 .post pre {
-    @apply my-8;
+  @apply my-8;
 }
 
 .post pre code {
-    @apply rounded-md;
-    @apply border-2;
-    @apply font-mono;
+  @apply text-sm;
+  @apply rounded-md;
+  @apply border-2;
+  @apply font-mono;
 }
