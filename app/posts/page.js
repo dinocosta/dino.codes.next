@@ -23,7 +23,7 @@ export default async function Posts() {
         >
           <h2 className="mb-1">{title}</h2>
           <div className="text-muted-light dark:text-muted-dark">
-            <small className="text-muted-light dark:text-muted-dark block">
+            <small className="text-muted-light dark:text-muted-dark mb-2 block">
               {formatDate(date)}
             </small>
             <small className="block">{description}</small>

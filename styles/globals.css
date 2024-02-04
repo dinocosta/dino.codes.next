@@ -40,3 +40,8 @@ body {
   @apply text-base;
   @apply md:text-lg;
 }
+
+small {
+  @apply leading-4;
+  @apply md:leading-5;
+}
