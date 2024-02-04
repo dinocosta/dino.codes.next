@@ -14,14 +14,14 @@ const links = [
 
 export default function About() {
   return (
-		<div>
+    <div>
       <PageTitle title="About" />
 
-      <div className="mx-auto relative h-80 md:h-96 lg:h-112 max-w-lg">
+      <div className="lg:h-112 relative mx-auto h-80 max-w-lg md:h-96">
         <Image
           fill
           src="/dino.jpg"
-					alt="dino"
+          alt="dino"
           className="rounded-md object-cover"
         />
       </div>
@@ -31,19 +31,10 @@ export default function About() {
         My name is Dino and I’m a Software Engineer based in Lisbon, Portugal 🇵🇹
       </p>
       <p className="py-2">
-        I’m currently working at{' '}
-        <Link href="https://remote.com">
-          Remote
-        </Link>
-        , but I’ve previously worked at{' '}
-        <Link href="https://onfido.com">
-          Onfido
-        </Link>{' '}
-        and{' '}
-        <Link href="https://unbabel.com">
-          Unbabel
-        </Link>
-        .
+        I’m currently working at <Link href="https://remote.com">Remote</Link>,
+        but I’ve previously worked at{' '}
+        <Link href="https://onfido.com">Onfido</Link> and{' '}
+        <Link href="https://unbabel.com">Unbabel</Link>.
       </p>
       <p className="py-2">
         Although in my past experiences I’ve mainly worked with Python I’m now
@@ -54,27 +45,27 @@ export default function About() {
       </p>
       <p className="py-2">
         Finally, I’m currently an Elixir mentor at{' '}
-        <Link href="https://exercism.org">
-          Exercism
-        </Link>
-        , which does help me to get better at explaining concepts and ideas to
-        other people, it also forces me to reinforce some learnings because you
-        want to make sure you’re not giving incorrect information to the people
-        whose solution you’re reviewing! Overall it’s a very rewarding
-        experience!
+        <Link href="https://exercism.org">Exercism</Link>, which does help me to
+        get better at explaining concepts and ideas to other people, it also
+        forces me to reinforce some learnings because you want to make sure
+        you’re not giving incorrect information to the people whose solution
+        you’re reviewing! Overall it’s a very rewarding experience!
       </p>
 
       <h2 className="mt-4 block text-xl">Where to find me</h2>
       <p className="py-2">Feel free to find me in any of these platforms!</p>
-			<ul className="ml-5 list-disc">
-				{links.map(({ href, text }) => (
-					<li key={`link-text`}>
-						<Link href={href}>
-							{text}
-						</Link>
-					</li>
-				))}
-			</ul>
-		</div>
+      <ul className="ml-5 list-disc">
+        {links.map(({ href, text }) => (
+          <li key={`link-text`}>
+            <Link
+              className="decoration-accent-light dark:decoration-accent-dark hover:text-accent-light hover:dark:text-accent-dark underline decoration-wavy"
+              href={href}
+            >
+              {text}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </div>
   )
 }

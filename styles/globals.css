@@ -18,17 +18,9 @@ body {
   /* Dark Mode */
   @apply dark:bg-background-dark;
   @apply dark:text-text-dark;
-
-  /* Use weight 400 for the text */
-  @apply font-normal;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  /* Use weight 700 for the headers */
-  @apply font-semibold;
+li::marker {
+  @apply text-muted-light;
+  @apply dark:text-muted-dark;
 }

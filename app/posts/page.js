@@ -21,12 +21,12 @@ export default async function Posts() {
           className="mb-2 block rounded-md py-2 transition-colors"
           href={`/posts/${id}`}
         >
-          <h2 className="mb-2 text-lg">{title}</h2>
+          <h2 className="mb-1 text-lg">{title}</h2>
           <div className="text-muted-light dark:text-muted-dark">
-            <small className="mb-1 block">{description}</small>
-            <small className="text-muted-light dark:text-muted-dark block">
+            <small className="text-muted-light dark:text-muted-dark mb-1 block">
               {formatDate(date)}
             </small>
+            <small className="block">{description}</small>
           </div>
         </Link>
       ))}

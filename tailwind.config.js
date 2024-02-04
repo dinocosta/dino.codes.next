@@ -14,13 +14,10 @@ module.exports = {
           to: { transform: 'translateY(0px)', opacity: 1 },
         },
       },
-      fontFamily: {
-        sans: ['var(--font-ibm-plex-sans)'],
-        mono: ['var(--font-ibm-plex-mono)'],
-      },
     },
     colors: {
       background: { light: '#E1E1E1', dark: '#222222' },
+      'background-secondary': { light: '#CFCFCF', dark: '#3B3B3B' },
       text: { light: '#222222', dark: '#E1E1E1' },
       muted: { light: '#7E7E7E', dark: '#9E9E9E' },
       accent: { light: '#E67635', dark: '#94C843' },

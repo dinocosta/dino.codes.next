@@ -9,18 +9,16 @@
 .post h1,
 .post h2,
 .post h3 {
-  @apply mt-6;
+  @apply mt-8;
   @apply mb-2;
 }
 
 .post h1 {
-  @apply text-xl;
-  @apply font-semibold;
+  @apply text-2xl;
 }
 
 .post h2 {
-  @apply text-lg;
-  @apply font-semibold;
+  @apply text-xl;
 }
 
 .post ul {
@@ -31,7 +29,6 @@
 
 .post p {
   @apply my-2;
-  @apply text-sm;
 }
 
 .post a {
@@ -53,12 +50,13 @@
  * little bit of style to them
  * Using `:not(pre)` guarantees we only affect `<code>` tags that are not in code blocks. */
 .post :not(pre) > code {
-  @apply rounded-md;
-  @apply bg-muted-light;
-  @apply dark:bg-muted-dark;
-  @apply dark:text-text-dark;
-  @apply px-1;
+  @apply font-mono;
+  @apply text-sm;
+  @apply bg-background-secondary-light;
+  @apply dark:bg-background-secondary-dark;
+  @apply rounded-sm;
   @apply py-0.5;
+  @apply px-1;
 }
 
 /* Add some margint to code blocks and give them round corners */
@@ -67,8 +65,12 @@
 }
 
 .post pre code {
-  @apply text-sm;
   @apply rounded-md;
-  @apply border-2;
   @apply font-mono;
+}
+
+.post hr {
+  @apply my-8;
+  @apply text-muted-light;
+  @apply dark:text-muted-dark;
 }

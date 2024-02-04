@@ -1,7 +1,8 @@
-export default function PageTitle({ title }) {
+export default function PageTitle({ children, title }) {
   return (
-    <h1 className="text-text-light dark:text-text-dark mb-1 block text-2xl">
-      {title}
-    </h1>
+    <div className="mb-4">
+      <h1 className="block text-2xl">{title}</h1>
+      {children}
+    </div>
   )
 }

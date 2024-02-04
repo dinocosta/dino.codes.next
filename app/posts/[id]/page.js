@@ -30,10 +30,11 @@ export default async function Post({ params }) {
 
   return (
     <div>
-      <PageTitle title={title} />
-      <small className="text-muted-light dark:text-muted-dark mb-6 block">
-        {formatDate(date)}
-      </small>
+      <PageTitle title={title}>
+        <small className="text-muted-light dark:text-muted-dark mb-6 mt-1 block">
+          {formatDate(date)}
+        </small>
+      </PageTitle>
 
       <CodeHighlighter />
       <div

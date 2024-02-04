@@ -1,5 +1,12 @@
 import * as NextLink from 'next/link'
 
 export default function Link({ children, href }) {
-	return <NextLink className="text-orange-500 dark:text-yellow-300" href={href}>{children}</NextLink>
+  return (
+    <NextLink
+      className="hover:text-accent-light hover:dark:text-accent-dark decoration-accent-light dark:decoration-accent-dark underline decoration-wavy"
+      href={href}
+    >
+      {children}
+    </NextLink>
+  )
 }

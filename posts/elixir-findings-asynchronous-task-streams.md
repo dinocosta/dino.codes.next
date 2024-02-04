@@ -1,5 +1,5 @@
 ---
-title: "Elixir Findings: Asynchronous Task Streams"
+title: "Elixir Findings: Asynchronous task streams"
 date: "2019-07-24"
 description: "Blogpost documenting how to use Task.async_stream/2 to run tasks in parallel using
 Elixir"
