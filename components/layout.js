@@ -1,13 +1,10 @@
 import NavBar from '@/components/navbar'
 import Script from 'next/script'
 import { Analytics } from '@vercel/analytics/react'
-import { Inter as Font } from 'next/font/google'
-
-const font = Font({ subsets: ['latin'], weight: ['400', '700'] })
 
 export default function Layout({ children }) {
   return (
-    <div className={`${font.className}`}>
+    <div>
       <NavBar />
       <div>
         <Script
@@ -32,6 +29,7 @@ page_path: window.location.pathname,
         <Analytics />
         <div className="mx-auto max-w-3xl">{children}</div>
       </div>
+      <footer className="mt-4" />
     </div>
   )
 }

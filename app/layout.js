@@ -35,6 +35,7 @@ page_path: window.location.pathname,
           <Analytics />
           <div className="mx-auto max-w-3xl">{children}</div>
         </div>
+        <footer className="mt-4" />
       </body>
     </html>
   )

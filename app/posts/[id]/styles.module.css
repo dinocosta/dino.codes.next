@@ -71,6 +71,6 @@
 
 .post hr {
   @apply my-8;
-  @apply text-muted-light;
-  @apply dark:text-muted-dark;
+  @apply text-background-secondary-light;
+  @apply dark:text-background-secondary-dark;
 }
