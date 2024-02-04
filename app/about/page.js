@@ -31,8 +31,9 @@ export default function About() {
         My name is Dino and I’m a Software Engineer based in Lisbon, Portugal 🇵🇹
       </p>
       <p className="py-2">
-        I’m currently working at <Link href="https://remote.com">Remote</Link>,
-        but I’ve previously worked at{' '}
+        I’m currently working at{' '}
+        <Link href="https://usebounce.com">Bounce</Link>, but I’ve previously
+        worked at <Link href="https://remote.com">Remote</Link> ,
         <Link href="https://onfido.com">Onfido</Link> and{' '}
         <Link href="https://unbabel.com">Unbabel</Link>.
       </p>

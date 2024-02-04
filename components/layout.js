@@ -27,9 +27,9 @@ page_path: window.location.pathname,
         />
 
         <Analytics />
-        <div className="mx-auto max-w-3xl">{children}</div>
+        <div className="mx-auto max-w-2xl">{children}</div>
       </div>
-      <footer className="mt-4" />
+      <footer className="mt-6" />
     </div>
   )
 }

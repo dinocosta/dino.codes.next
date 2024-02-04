@@ -24,3 +24,19 @@ li::marker {
   @apply text-muted-light;
   @apply dark:text-muted-dark;
 }
+
+/* Font Sizes */
+h1 {
+  @apply text-2xl;
+  @apply md:text-3xl;
+}
+
+h2 {
+  @apply text-xl;
+  @apply md:text-2xl;
+}
+
+body {
+  @apply text-base;
+  @apply md:text-lg;
+}

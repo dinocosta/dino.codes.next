@@ -10,15 +10,9 @@
 .post h2,
 .post h3 {
   @apply mt-8;
+  @apply md:mt-10;
   @apply mb-2;
-}
-
-.post h1 {
-  @apply text-2xl;
-}
-
-.post h2 {
-  @apply text-xl;
+  @apply md:mb-4;
 }
 
 .post ul {
