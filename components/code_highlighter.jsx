@@ -19,6 +19,3 @@ export default function CodeHighlighter() {
 
   return <span></span>
 }
-
-// Light theme - https://www.realtimecolors.com/?colors=100F0F-FFFCF0-BC5215-100f0f-4385BE&fonts=IBM%20Plex%20Sans%20Condensed-IBM%20Plex%20Sans
-// Dark theme - https://www.realtimecolors.com/?colors=CECDC3-100F0F-D0A215-403E3C-3AA99F&fonts=IBM%20Plex%20Sans%20Condensed-IBM%20Plex%20Sans
