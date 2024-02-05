@@ -37,7 +37,7 @@ As stated in [telemetry](https://github.com/beam-telemetry/telemetry)’s README
 For the context of this blogpost, it’s only important to know the two following functions in telemetry:
 
 * [:telemetry.attach/4](https://hexdocs.pm/telemetry/telemetry.html#attach/4) - attaches an handler to an event, allowing the caller to define a function to be called when that specific event is emitted.
-    * The handler function to be called must have a signature of [handler_function()](https://hexdocs.pm/telemetry/telemetry.html#t:handler_function/0) – `([atom()], map(), map(), term()) :: any() )`.
+    * The handler function to be called must have a signature of [handler_function()](https://hexdocs.pm/telemetry/telemetry.html#t:handler_function/0).
 * [:telemetry.execute/2](https://hexdocs.pm/telemetry/telemetry.html#execute/2) - emits an event, invoking all handlers attached to this event, while passing measurements to the handler function.
     * The [:telemetry.execute/3](https://hexdocs.pm/telemetry/telemetry.html#execute/3) function is also available if you wish to also provide metadata to the handler function attached to the event.
 

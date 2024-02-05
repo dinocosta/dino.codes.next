@@ -15,9 +15,21 @@
   @apply md:mb-4;
 }
 
+.post ul ~ ul {
+  @apply list-disc;
+  @apply list-inside;
+  @apply ml-5;
+}
+
 .post ul {
   @apply list-disc;
   @apply list-inside;
+}
+
+.post li > ul {
+  @apply list-disc;
+  @apply list-inside;
+  @apply ml-6;
 }
 
 .post ol {
@@ -67,9 +79,10 @@
   @apply px-1;
 }
 
-/* Add some margint to code blocks and give them round corners */
+/* Add some margin to code blocks and give them round corners */
 .post pre {
   @apply my-8;
+  @apply text-base;
 }
 
 .post pre code {
