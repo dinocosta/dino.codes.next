@@ -6,7 +6,7 @@
 import hljs from 'highlight.js/lib/core'
 import python from 'highlight.js/lib/languages/python'
 import elixir from 'highlight.js/lib/languages/elixir'
-import 'highlight.js/styles/base16/grayscale-dark.css'
+import 'highlight.js/styles/base16/grayscale-light.css'
 hljs.registerLanguage('python', python)
 hljs.registerLanguage('elixir', elixir)
 

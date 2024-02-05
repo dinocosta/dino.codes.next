@@ -17,8 +17,12 @@
 
 .post ul {
   @apply list-disc;
-  @apply ml-4;
-  @apply my-4;
+  @apply list-inside;
+}
+
+.post ol {
+  @apply list-decimal;
+  @apply list-inside;
 }
 
 .post p {
@@ -38,6 +42,16 @@
   @apply mx-auto;
   @apply my-8;
   @apply rounded-md;
+}
+
+.post blockquote {
+  @apply relative;
+  @apply border-s-4;
+  @apply ps-4;
+  @apply text-muted-light;
+  @apply dark:text-muted-dark;
+  @apply border-muted-light;
+  @apply dark:border-muted-dark;
 }
 
 /* Since highlight.js does not highlight code in <code> inline tags, this adds a
