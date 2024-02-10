@@ -43,6 +43,7 @@
 
 .post a {
   @apply underline;
+  @apply underline-offset-2;
   @apply decoration-wavy;
   @apply decoration-accent-light;
   @apply dark:decoration-accent-dark;
@@ -71,7 +72,6 @@
  * Using `:not(pre)` guarantees we only affect `<code>` tags that are not in code blocks. */
 .post :not(pre) > code {
   @apply font-mono;
-  @apply text-sm;
   @apply bg-background-secondary-light;
   @apply dark:bg-background-secondary-dark;
   @apply rounded-sm;

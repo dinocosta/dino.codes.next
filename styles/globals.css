@@ -38,7 +38,12 @@ h2 {
 
 body {
   @apply text-base;
-  @apply md:text-lg;
+  @apply xl:text-lg;
+}
+
+code {
+  @apply text-sm;
+  @apply xl:text-base;
 }
 
 small {
