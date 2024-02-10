@@ -16,7 +16,7 @@ and it involves using both an Erlang package called
 [telemetry](https://github.com/beam-telemetry/telemetry) as well as
 [Plug.Telemetry](https://hexdocs.pm/plug/Plug.Telemetry.html).
 
-This blogpost does not look into all of the logging done by Phoenix, focusing
+This blog post does not delve into all of the logging done by Phoenix, focusing
 solely on both the `[info]` messages logged when a new request starts being
 processed and before a response is returned, as outlined below:
 
@@ -141,16 +141,17 @@ We have successfully attached one handler to each of the events triggered by
 
 ## Phoenix.Logger
 
-We’re close to seeing the full picture but we first need to look into
+
+We’re close to seeing the full picture, but we first need to look into
 `Phoenix.Logger`. This module leverages the `:telemetry.attach/4` function to
 attach multiple of its public functions to specific events. In the context of
-this blogpost we only care about the `[:phoenix, :endpoint, :start]` and
+this blog post, we only care about the `[:phoenix, :endpoint, :start]` and
 `[:phoenix, :endpoint, :stop]` events, which are handled by
 `Phoenix.Logger.phoenix_endpoint_start/4` and
 `Phoenix.Logger.phoenix_endpoint_stop/4`, respectively.
 
-If you look at those functions you can see that, unless `log_level` returns
-`false` (REPHRASE):
+If you look at those functions you can see that, unless `log_level/2` returns
+`false`, then the function will log information about the connection:
 
 * `phoenix_endpoint_start/4` will log what’s the HTTP method and the request
 path for the connection. For example:
@@ -211,3 +212,14 @@ There might be more nuances in the middle of all of this process, but this
 gives you a nice overview on how all of this happens.
 
 ![Diagram](/images/phoenix_logs_endpoint_routes_diagrams.png)
+
+## Conclusion
+
+It was an interesting exploration learning how all of these different pieces
+come together to achieve something as simple as logging phoenix's endpoint
+requests and responses.
+
+Even better, knowing how easy it is to leverage the `:telemetry` package in
+order to attach handler functions to specific events, all the other modules end
+up building on top of this, and it's something I'm already using on some
+personal projects now that I'm more familiar with how it works.
