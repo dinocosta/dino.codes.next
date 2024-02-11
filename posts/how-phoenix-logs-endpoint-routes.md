@@ -22,8 +22,8 @@ processed and before a response is returned, as outlined below:
 
 ![Routes Logging](/images/phoenix_logs_endpoint_routes_logging.png)
 
-We’ll start by looking at each step separately, with the last section
-containing an example of how we can do this ourselves.
+We’ll look at each step separately, while providing code snippets to follow
+along, if you wish to test it out yourself.
 
 ## Telemetry
 
@@ -41,7 +41,7 @@ For the context of this blogpost, it’s only important to know the two followin
 * [:telemetry.execute/2](https://hexdocs.pm/telemetry/telemetry.html#execute/2) - emits an event, invoking all handlers attached to this event, while passing measurements to the handler function.
     * The [:telemetry.execute/3](https://hexdocs.pm/telemetry/telemetry.html#execute/3) function is also available if you wish to also provide metadata to the handler function attached to the event.
 
-Let’s try it ourselves!
+Let’s try it ourselves! Open an IEx shell and follow the steps below:
 
 1. Call `:telemetry.attach/4`, providing whatever handler ID you wish, as well
 as the event’s name:
@@ -210,6 +210,8 @@ function that logs the request’s method and path  –
 
 There might be more nuances in the middle of all of this process, but this
 gives you a nice overview on how all of this happens.
+
+Here's a diagram, summing all of this up, to help visualize the flow of events:
 
 ![Diagram](/images/phoenix_logs_endpoint_routes_diagrams.png)
 
