@@ -1,5 +1,5 @@
 ---
-title: "How Phoenix logs endpoint routes"
+title: "How Phoenix logs endpoint requests and responses"
 date: "2023-02-06"
 description: "Find out how Phoenix leverages telemetry in order to log requests and response from your server."
 draft: true
@@ -217,11 +217,12 @@ Here's a diagram, summing all of this up, to help visualize the flow of events:
 
 ## Conclusion
 
-It was an interesting exploration learning how all of these different pieces
-come together to achieve something as simple as logging phoenix's endpoint
-requests and responses.
+In this exploration of the Phoenix framework, we've uncovered how it logs information about the
+requests and responses that reaches its endpoints. It was an interesting exploration learning 
+how all of these different pieces come together to achieve something as simple as logging these
+messages.
 
-Even better, knowing how easy it is to leverage the `:telemetry` package in
+Even better is knowing how easy it is to leverage the `:telemetry` package in
 order to attach handler functions to specific events, all the other modules end
 up building on top of this, and it's something I'm already using on some
 personal projects now that I'm more familiar with how it works.
