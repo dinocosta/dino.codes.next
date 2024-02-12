@@ -13,25 +13,6 @@ export default function RootLayout({ children }) {
       <body>
         <NavBar />
         <div className="overflow-visible px-6">
-          <Script
-            strategy="afterInteractive"
-            src="https://www.googletagmanager.com/gtag/js?id=G-LF9R8Y4KG2"
-          />
-          <Script
-            id="google-analytics"
-            strategy="afterInteractive"
-            dangerouslySetInnerHTML={{
-              __html: `
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-LF9R8Y4KG2', {
-page_path: window.location.pathname,
-});
-`,
-            }}
-          />
-
           <Analytics />
           <div className="mx-auto max-w-2xl">{children}</div>
         </div>
