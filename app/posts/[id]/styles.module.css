@@ -15,10 +15,26 @@
   @apply md:mb-4;
 }
 
+.post ul ~ ul {
+  @apply list-disc;
+  @apply list-inside;
+  @apply ml-5;
+}
+
 .post ul {
   @apply list-disc;
-  @apply ml-4;
-  @apply my-4;
+  @apply list-inside;
+}
+
+.post li > ul {
+  @apply list-disc;
+  @apply list-inside;
+  @apply ml-6;
+}
+
+.post ol {
+  @apply list-decimal;
+  @apply list-inside;
 }
 
 .post p {
@@ -41,6 +57,16 @@
   @apply rounded-md;
 }
 
+.post blockquote {
+  @apply relative;
+  @apply border-s-4;
+  @apply ps-4;
+  @apply text-muted-light;
+  @apply dark:text-muted-dark;
+  @apply border-muted-light;
+  @apply dark:border-muted-dark;
+}
+
 /* Since highlight.js does not highlight code in <code> inline tags, this adds a
  * little bit of style to them
  * Using `:not(pre)` guarantees we only affect `<code>` tags that are not in code blocks. */
@@ -53,9 +79,10 @@
   @apply px-1;
 }
 
-/* Add some margint to code blocks and give them round corners */
+/* Add some margin to code blocks and give them round corners */
 .post pre {
   @apply my-8;
+  @apply text-base;
 }
 
 .post pre code {
