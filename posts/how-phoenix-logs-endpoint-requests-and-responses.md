@@ -94,7 +94,9 @@ This plug will emit two distinct events:
 1. When this plug is called it will first emit an event using
 `:telemetry.execute` with event identifier set to `event_prefix ++ [:start]`
 – in this case `[:user, :invitation, :start]`.
-2. It also leverages `Plug.Conn.register_before_send/2` to schedule a call
+2. It also leverages
+[`Plug.Conn.register_before_send/2`](https://hexdocs.pm/plug/Plug.Conn.html#register_before_send/2)
+to schedule a call
 `:telemetry.execute/3` with event identifier set to `event_prefix ++ [:stop]`
 – in this case `[:user, :invitation, :stop]`.
 
@@ -135,7 +137,7 @@ Plug.Conn.send_resp(conn, 200, "OK")
 We have successfully attached one handler to each of the events triggered by
 `Plug.Telemetry`, in this case `[:user, :invitation, :start]` and
 `[:user, :invitation, :stop]`, and called the two handlers by calling
-`Plug.Telemetry` and sending the response from `%Plug.Conn{}`.
+`Plug.Telemetry` and returning the response from `%Plug.Conn{}`.
 
 I think it's worth pointing out that this code should only serve as an example
 to how all of this works, you probably don't want to directly call plugs in
@@ -199,7 +201,7 @@ There it is, our familiar friend, `Plug.Telemetry`, using an event prefix
 we’ve seen before – `[:phoenix, :endpoint]`.
 
 We now understand that, whenever request reaches a Phoenix app, it’ll first go
-through the endpoint module, where Plug.Telemetry will be called with the
+through the endpoint module, where `Plug.Telemetry` will be called with the
 `:event_prefix` option set to `[:phoenix, :endpoint]`.
 
 In turn, this will trigger a call to
