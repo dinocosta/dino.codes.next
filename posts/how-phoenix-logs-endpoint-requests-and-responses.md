@@ -2,7 +2,7 @@
 title: "How Phoenix logs endpoint requests and responses"
 date: "2023-02-06"
 description: "Find out how Phoenix leverages telemetry in order to log requests and response from your server."
-draft: true
+draft: false
 truncated: false
 tags: ["Elixir", "Phoenix"]
 ---
