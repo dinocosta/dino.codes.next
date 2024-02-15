@@ -1,6 +1,6 @@
 ---
 title: "How Phoenix logs endpoint requests and responses"
-date: "2023-02-06"
+date: "2024-02-14"
 description: "Find out how Phoenix leverages telemetry in order to log requests and response from your server."
 draft: false
 truncated: false
