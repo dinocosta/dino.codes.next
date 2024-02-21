@@ -14,6 +14,10 @@ module.exports = {
           to: { transform: 'translateY(0px)', opacity: 1 },
         },
       },
+      fontFamily: {
+        sans: ['var(--font-geist-sans)'],
+        mono: ['var(--font-geist-mono)'],
+      },
     },
     colors: {
       background: { light: '#E1E1E1', dark: '#222222' },

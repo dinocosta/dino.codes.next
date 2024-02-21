@@ -11,6 +11,9 @@
 }
 
 body {
+  /* Use sans-serif font */
+  @apply font-sans;
+
   /* Light Mode */
   @apply bg-background-light;
   @apply text-text-light;

@@ -2,6 +2,8 @@ import '@/styles/globals.css'
 import NavBar from '@/components/navbar'
 import Script from 'next/script'
 import { Analytics } from '@vercel/analytics/react'
+import { GeistSans } from 'geist/font/sans'
+import { GeistMono } from 'geist/font/mono'
 
 export const metadata = {
   title: '[dino.codes]',
@@ -9,7 +11,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="font-sant">
+    <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable}`}>
       <body>
         <NavBar />
         <div className="overflow-visible px-6">
